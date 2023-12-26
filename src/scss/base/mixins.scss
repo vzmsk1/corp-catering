@@ -1,0 +1,11 @@
+@mixin pseudo() {
+    content: '';
+    position: absolute;
+    @content;
+}
+
+@mixin small-tablet {
+    @media (max-width: 48em) {
+        @content;
+    }
+}
