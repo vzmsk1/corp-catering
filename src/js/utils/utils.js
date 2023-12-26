@@ -39,15 +39,11 @@ export const bodyLock = (delay = 500) => {
 // menu
 export const menuInit = () => {
   if (document.querySelector('.hamburger')) {
-    document.addEventListener('click', function (e) {
-      if (bodyLockStatus && e.target.closest('.hamburger')) {
-        menuOpen();
-      } else if (
-        bodyLockStatus &&
-        document.documentElement.classList.contains('_menu-opened') &&
-        (e.target.closest('.menu__close-btn') || !e.target.closest('.menu'))
-      ) {
-        menuClose();
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', function (e) {
+      if (bodyLockStatus) {
+        document.documentElement.classList.toggle('_menu-opened');
+        bodyLockToggle();
       }
     });
   }

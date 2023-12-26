@@ -16,9 +16,50 @@ $white: #ffffff;
 
 // ------------------------------- base styles ------------------------------
 
-// base scss file
-@import 'base/set';
+// base file
+@import 'base/base';
+
+// html
+html.lock,
+html.lock body {
+  overflow: hidden;
+  touch-action: none;
+}
+
+// wrapper
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1920px;
+
+  // press footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // fix for sliders
+  > * {
+    min-width: 0;
+  }
+}
+
+// main
+.main {
+  padding-top: 11.2rem;
+  @media (min-width: 48em) {
+    padding-top: 4rem;
+  }
+}
 
 // --------------------------------------------------------------------------
+
+// header / footer
+@import 'components/header';
+@import 'components/footer';
+
+// base scss
+@import 'base/set';
+@import 'base/common';
 
 // sections
