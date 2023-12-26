@@ -70,11 +70,11 @@
         }
 
         &-icon {
-            @include width(6rem, 6rem);
+            @include sizes(6rem, 6rem);
             margin-bottom: 4.7rem;
 
             @include small-tablet {
-                @include width(8rem, auto);
+                @include sizes(8rem, auto);
                 margin-bottom: 6.4rem;
             }
         }

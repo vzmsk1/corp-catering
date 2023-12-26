@@ -27,10 +27,10 @@
         }
 
         &-icon {
-            @include width(5.8rem, 5.8rem);
+            @include sizes(5.8rem, 5.8rem);
 
             @include small-tablet {
-                @include width(8rem, 8rem);
+                @include sizes(8rem, 8rem);
             }
         }
 

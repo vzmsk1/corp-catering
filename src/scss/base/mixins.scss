@@ -10,7 +10,7 @@
     }
 }
 
-@mixin width($width, $height) {
+@mixin sizes($width, $height) {
     max-width: $width;
     width: 100%;
     height: $height;
