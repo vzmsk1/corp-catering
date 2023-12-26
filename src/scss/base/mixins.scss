@@ -9,3 +9,11 @@
         @content;
     }
 }
+
+@mixin width($width, $height) {
+    max-width: $width;
+    width: 100%;
+    height: $height;
+
+    @content;
+}

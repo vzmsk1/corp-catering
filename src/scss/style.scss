@@ -4,6 +4,7 @@
 $black: #1d1d1d;
 $orange: #f4996b;
 $green: #d1f39d;
+$green-secondary: #cfffd3;
 $darkGreen: #0b4333;
 $lilac: #d1e1f9;
 $gray: #afafaf;
@@ -21,8 +22,9 @@ $white: #ffffff;
 
 // --------------------------------------------------------------------------
 
-// ------------------------------- addiction ------------------------------
+// ------------------------------- additional ------------------------------
 @import 'base/mixins';
 @import 'base/components-d';
 
 // sections
+@import 'sections/benefits';
