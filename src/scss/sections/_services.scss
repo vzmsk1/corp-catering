@@ -1,0 +1,93 @@
+.services {
+
+    @include small-tablet{
+        overflow: hidden;
+    }
+
+    &__title {
+        margin-bottom: 0;
+
+        @include small-tablet{
+            margin-bottom: 8rem;
+        }
+    }
+
+    &-swiper {
+        @include small-tablet{
+            overflow: visible;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5.6rem;
+
+        @include small-tablet{
+            margin-bottom: 0;
+        }
+    }
+
+    &__slide {
+        border-radius: 2rem;
+        position: relative;
+        height: 78rem;
+        display: flex;
+
+        @include small-tablet{
+            border-radius: 4rem;
+            height: 98.8rem;
+        }
+
+        &-image {
+            border-radius: inherit;
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+
+            img {
+                border-radius: inherit;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+            padding: 1.6rem 4.2rem 1.6rem 3.2rem;
+            border-radius: 0rem 2rem 2rem 0rem;
+            background: $green-secondary;
+            margin-top: auto;
+            margin-bottom: 4rem;
+            max-width: 38rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            @include small-tablet{
+                max-width: 100%;
+                margin-bottom: 0;
+                border-radius: 4rem;
+                padding: 3.2rem;
+                gap: 1.6rem;
+            }
+
+            &-title {
+                font-size: 2.8rem;
+                font-weight: 700;
+                line-height: 120%;
+
+                @include small-tablet{
+                    font-size: 4rem;
+                }
+            }
+
+            &-description {
+                @include text20;
+            }
+        }
+    }
+
+    @include swiper-navigation;
+}
