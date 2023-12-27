@@ -4,6 +4,7 @@
 $black: #1d1d1d;
 $orange: #f4996b;
 $green: #d1f39d;
+$green-secondary: #cfffd3;
 $darkGreen: #0b4333;
 $lilac: #d1e1f9;
 $gray: #afafaf;
@@ -54,6 +55,10 @@ html.lock body {
 
 // --------------------------------------------------------------------------
 
+// ------------------------------- additional ------------------------------
+@import 'base/mixins';
+@import 'base/components-d';
+
 // header / footer
 @import 'components/header';
 @import 'components/footer';
@@ -63,3 +68,7 @@ html.lock body {
 @import 'base/common';
 
 // sections
+@import 'sections/benefits';
+@import 'sections/order';
+@import 'sections/selection';
+@import 'sections/services';

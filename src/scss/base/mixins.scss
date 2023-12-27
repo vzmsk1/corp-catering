@@ -1,0 +1,48 @@
+@mixin pseudo() {
+    content: '';
+    position: absolute;
+    @content;
+}
+
+@mixin small-tablet {
+    @media (max-width: 48em) {
+        @content;
+    }
+}
+
+@mixin sizes($width, $height) {
+    max-width: $width;
+    width: 100%;
+    height: $height;
+
+    @content;
+}
+
+@mixin swiper-navigation() {
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        color: $darkGreen;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: normal;
+
+        .swiper-pagination-current {
+            color: $darkGreen;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .swiper-pagination-total {
+            color: $gray;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    @content;
+}

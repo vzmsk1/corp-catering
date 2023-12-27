@@ -1,0 +1,100 @@
+.benefits {
+    &__title {
+        @include small-tablet {
+            letter-spacing: 0;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2.4rem;
+
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 4.8rem;
+        }
+    }
+
+    &__item {
+        background: $lilac;
+        border-radius: 1rem;
+        padding: 3.2rem;
+        grid-column: span 5;
+        grid-row: span 2;
+
+        @include small-tablet {
+            border-radius: 2.8rem;
+            overflow: hidden;
+
+            &:first-child {
+                order: -3;
+            }
+
+            &:nth-child(2) {
+                order: -1;
+            }
+
+            &:nth-child(3) {
+                order: -2;
+            }
+        }
+
+        &.--big {
+            padding: 0;
+
+            grid-column: span 7;
+            grid-row: span 4;
+
+            @include small-tablet {
+                overflow: hidden;
+                max-height: 42.4rem;
+            }
+
+            .benefits__item-image {
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+
+                img {
+                    border-radius: inherit;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &:nth-child(3n) {
+            background: $green-secondary;
+        }
+
+        &-icon {
+            @include sizes(6rem, 6rem);
+            margin-bottom: 4.7rem;
+
+            @include small-tablet {
+                @include sizes(8rem, auto);
+                margin-bottom: 6.4rem;
+            }
+        }
+
+        &-title {
+            @include h3;
+            display: block;
+            margin-bottom: 2.4rem;
+
+            @include small-tablet {
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        &-description {
+            @include text20;
+
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+}
