@@ -23,34 +23,42 @@ $white: #ffffff;
 // html
 html.lock,
 html.lock body {
-  overflow: hidden;
-  touch-action: none;
+    overflow: hidden;
+    touch-action: none;
+}
+
+// body
+body {
+    background-color: #ebfef8;
+    background-image: url(@img/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 // wrapper
 .wrapper {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 1920px;
 
-  // press footer
-  > main {
-    flex: 1 1 auto;
-  }
-  // fix for sliders
-  > * {
-    min-width: 0;
-  }
+    // press footer
+    > main {
+        flex: 1 1 auto;
+    }
+    // fix for sliders
+    > * {
+        min-width: 0;
+    }
 }
 
 // main
 .main {
-  padding-top: 11.2rem;
-  @media (min-width: 48em) {
-    padding-top: 4rem;
-  }
+    padding-top: 11.2rem;
+    @media (max-width: 48em) {
+        padding-top: 14.6rem;
+    }
 }
 
 // --------------------------------------------------------------------------
