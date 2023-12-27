@@ -46,3 +46,22 @@ new Swiper(
         }
     })
 );
+
+new Swiper(
+    '.reviews-swiper',
+    initSwiperSettings('reviews', {
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: rem(1.6),
+                pagination: {
+                    el: `.reviews__fraction-mobile`
+                }
+            },
+            768: {
+                spaceBetween: rem(2.4),
+                slidesPerView: 2
+            }
+        }
+    })
+);
