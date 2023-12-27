@@ -199,6 +199,10 @@
         margin: 0;
         padding: 0;
 
+        @include small-tablet{
+            @include sizes(11.6rem, 5.3rem);
+        }
+
         &::after {
             display: none;
             visibility: hidden;
@@ -212,5 +216,38 @@
 
     &-disabled {
         opacity: 1 !important;
+    }
+}
+
+.input-field {
+    display: block;
+
+    input {
+        padding-bottom: 0.8rem;
+        border-bottom: 0.1rem solid #d2dbd2;
+        color: #afafaf;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+
+        @include small-tablet{
+            padding-bottom: 1.6rem;
+            font-size: 3.6rem;
+        }
+
+        &::placeholder {
+            color: #afafaf;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include small-tablet{
+                padding-bottom: 1.6rem;
+                font-size: 3.6rem;
+            }
+        }
     }
 }
