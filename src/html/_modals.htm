@@ -1,0 +1,101 @@
+<div id="applicationModal" aria-hidden="true" class="modal application-modal">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="application-modal__inner">
+                    <div class="application-modal__image-wrap">
+                        <img
+                            src="@img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
+                            alt=""
+                            class="application-modal__image"
+                        />
+                    </div>
+                    <div class="application-modal__content">
+                        <button data-close type="button" class="application-modal__close">
+                            <img
+                                src="@img/icons/cross-gray.svg"
+                                alt=""
+                                class="application-modal__close-icon"
+                            />
+                        </button>
+                        <span class="application-modal__title">Оставьте заявку</span>
+                        <form
+                            data-modal-message="#applicationSentModal"
+                            data-dev
+                            action="#"
+                            class="application-modal__form"
+                        >
+                            <div class="application-modal__fields">
+                                <div class="application-modal__input input">
+                                    <input
+                                        data-validate
+                                        data-required
+                                        autocomplete="off"
+                                        type="text"
+                                        name="form[]"
+                                        data-error="Заполните поле"
+                                        placeholder="Имя"
+                                        class="input__field"
+                                    />
+                                </div>
+                                <div class="application-modal__input input">
+                                    <input
+                                        data-validate
+                                        data-required
+                                        data-phone-mask
+                                        autocomplete="off"
+                                        type="tel"
+                                        name="form[]"
+                                        data-error="Заполните поле"
+                                        placeholder="Телефон"
+                                        class="input__field"
+                                    />
+                                </div>
+                            </div>
+                            <p class="application-modal__text">
+                                Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+                            </p>
+                            <button type="submit" class="application-modal__btn btn">
+                                <span class="btn__text">Отправить</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="applicationSentModal" aria-hidden="true" class="modal application-modal application-modal_sent">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="application-modal__inner">
+                    <div class="application-modal__image-wrap">
+                        <img
+                            src="@img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
+                            alt=""
+                            class="application-modal__image"
+                        />
+                    </div>
+                    <div class="application-modal__content">
+                        <button data-close type="button" class="application-modal__close">
+                            <img
+                                src="@img/icons/cross-gray.svg"
+                                alt=""
+                                class="application-modal__close-icon"
+                            />
+                        </button>
+                        <span class="application-modal__title">Ваша заявка отправлена</span>
+                        <p class="application-modal__text">
+                            Наш менеджер с скоро свяжется с Вами для уточнения деталей!
+                        </p>
+                        <a href="#" class="application-modal__btn btn">
+                            <span class="btn__text">На главную</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
