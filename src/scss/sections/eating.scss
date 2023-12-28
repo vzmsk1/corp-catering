@@ -59,7 +59,7 @@
             border-radius: 2rem;
             height: 41.2rem;
 
-            @include small-tablet{
+            @include small-tablet {
                 height: 54rem;
             }
         }
@@ -77,7 +77,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
 
-            @include small-tablet{
+            @include small-tablet {
                 padding: 3.2rem;
                 border-radius: 4rem;
                 font-size: 4rem;
