@@ -12,8 +12,32 @@ import * as utils from './utils/utils.js';
 // menu
 utils.menuInit();
 
+// dynamic dom
+utils.dynamicDOM();
+
+// ---------------------------------- form ----------------------------------
+
+import * as forms from './utils/form/form.js';
+
+// form fields
+forms.formFieldsInit({ viewPass: false });
+
+// form submit
+forms.formSubmit();
+
+// ------------------------------- input mask -------------------------------
+
+import './utils/form/input_mask.js';
+
 // ---------------------------------- libs ----------------------------------
 
 // dynamic dom
 import './libs/dynamic_dom.js';
 
+// --------------------------------- modals ---------------------------------
+
+import './libs/modals.js';
+
+// ------------------------------- own scripts ------------------------------
+
+import './utils/script.js';

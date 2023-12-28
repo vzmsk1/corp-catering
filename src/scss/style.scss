@@ -9,6 +9,7 @@ $darkGreen: #0b4333;
 $lilac: #d1e1f9;
 $gray: #afafaf;
 $white: #ffffff;
+$red: #f02222;
 
 // ---------------------------------- fonts ---------------------------------
 
@@ -29,7 +30,7 @@ html.lock body {
 
 // body
 body {
-    background-color: #ebfef8;
+    overflow-x: hidden;
     background-image: url(@img/bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,6 +38,7 @@ body {
 
 // wrapper
 .wrapper {
+    position: relative;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -61,6 +63,21 @@ body {
     }
 }
 
+// swiper fade fix
+.swiper-fade {
+    .swiper-slide {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition:
+            opacity 0.5s ease,
+            visibility 0.5s ease;
+        &.swiper-slide-active {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+}
+
 // --------------------------------------------------------------------------
 
 // ------------------------------- additional ------------------------------
@@ -74,12 +91,16 @@ body {
 // base scss
 @import 'base/set';
 @import 'base/common';
+@import 'base/modals';
 
 // sections
 @import 'sections/benefits';
 @import 'sections/order';
 @import 'sections/selection';
 @import 'sections/services';
+@import 'sections/hero-mainpage';
+@import 'sections/offers';
+@import 'sections/order-banner';
 @import 'sections/reviews';
 @import 'sections/request';
 @import 'sections/attendance';

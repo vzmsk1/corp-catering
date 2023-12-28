@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 
 import { rem } from '@js/utils/utils';
 
@@ -12,7 +12,7 @@ function initSwiperSettings(initializer, payload) {
     if (!document.querySelector(`.${initializer}`)) return;
 
     return {
-        modules: [Navigation, Pagination],
+        modules: [Navigation, Pagination, EffectFade],
         speed: 2100,
         keyboard: {
             enabled: true
@@ -34,6 +34,7 @@ function initSwiperSettings(initializer, payload) {
 new Swiper(
     '.services-swiper',
     initSwiperSettings('services', {
+        speed: 800,
         breakpoints: {
             0: {
                 slidesPerView: 1.08,
@@ -43,6 +44,19 @@ new Swiper(
                 spaceBetween: rem(2.4),
                 slidesPerView: 2
             }
+        }
+    })
+);
+
+new Swiper(
+    '.hero-mainpage__slider',
+    initSwiperSettings('hero-mainpage', {
+        speed: 800,
+        loop: true,
+        loopPreventsSliding: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
         }
     })
 );

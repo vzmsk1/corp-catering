@@ -37,11 +37,11 @@
         &-text {
             @include h3;
 
-            span {
+            a {
                 color: $orange;
                 display: block;
 
-                @include small-tablet{
+                @include small-tablet {
                     display: inline;
                 }
             }

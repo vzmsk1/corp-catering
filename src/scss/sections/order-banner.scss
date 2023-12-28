@@ -1,0 +1,122 @@
+.order-banner {
+    position: relative;
+    width: 100vw;
+    background-color: $lilac;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 58%;
+        background-color: $green-secondary;
+    }
+    @media (min-width: 1920px) {
+        margin-left: calc((100vw - 1920px) / -2);
+        &::before {
+            height: 50%;
+        }
+    }
+
+    // .order-banner__container
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+
+    // .order-banner__image-wrap
+
+    &__image-wrap {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 35rem;
+        transform: translate(-50%, -17rem) rotate(-67deg);
+        @media (min-width: 48em) {
+            left: 0;
+            width: 50rem;
+            transform: translate(5rem, -5rem) rotate(-22deg);
+        }
+    }
+
+    // .order-banner__image
+
+    &__image {
+        object-fit: contain;
+    }
+
+    // .order-banner__content
+
+    &__content {
+        padding: 25.2rem 0 13rem 0;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            padding: 16rem 0 9rem 0;
+            align-self: center;
+        }
+    }
+
+    // .order-banner__title
+
+    &__title {
+        @include h2;
+        margin-bottom: 4.4rem;
+        max-width: 43.4rem;
+        @media (max-width: 48em) {
+            margin-bottom: 2.4rem;
+            max-width: none;
+            font-size: 5rem;
+        }
+    }
+
+    // .order-banner__text
+
+    &__text {
+        @include text20;
+        margin-bottom: 5rem;
+        max-width: 58.4rem;
+        @media (max-width: 48em) {
+            max-width: none;
+            font-size: 3.2rem;
+        }
+    }
+
+    // .order-banner__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 3.2rem;
+        }
+    }
+
+    // .order-banner__input
+
+    &__input {
+        margin-bottom: 5rem;
+        @media (min-width: 48em) {
+            flex: 0 0 30rem;
+        }
+    }
+
+    // .order-banner__btn
+
+    &__btn {
+        align-self: flex-start;
+        min-width: 35rem;
+        @media (min-width: 48em) {
+            min-width: 19.7rem;
+        }
+    }
+}

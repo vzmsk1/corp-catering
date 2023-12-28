@@ -1,8 +1,20 @@
 .selection {
     background: $lilac;
+    @media (min-width: 48em) {
+        width: 100vw;
+        margin-left: calc((100vw - 100%) / -2);
+    }
 
     @include small-tablet {
         overflow: hidden;
+    }
+
+    &__btn {
+        align-self: flex-start;
+        min-width: 25.4rem;
+        @media (max-width: 48em) {
+            min-width: 44rem;
+        }
     }
 
     &__info {
