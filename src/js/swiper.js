@@ -65,3 +65,19 @@ new Swiper(
         }
     })
 );
+
+new Swiper(
+    '.eating-swiper',
+    initSwiperSettings('eating', {
+        breakpoints: {
+            0: {
+                slidesPerView: 1.08,
+                spaceBetween: rem(1.6)
+            },
+            768: {
+                spaceBetween: rem(2.4),
+                slidesPerView: 3
+            }
+        }
+    })
+);

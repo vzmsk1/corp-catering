@@ -56,6 +56,12 @@
     &__button {
         margin-bottom: 0.8rem;
 
+        &.desktop {
+            @include small-tablet {
+                display: none;
+            }
+        }
+
         @include small-tablet {
             margin-bottom: 0;
         }
