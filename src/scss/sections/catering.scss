@@ -1,0 +1,29 @@
+.catering {
+    &__title {
+        margin-bottom: 6rem;
+
+        @include small-tablet {
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(74.8rem, 1fr));
+        gap: 2.4rem;
+
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+    }
+
+    &__item {
+        .services__slide-text-title {
+            @include small-tablet {
+                font-size: 5.6rem;
+            }
+        }
+    }
+}
