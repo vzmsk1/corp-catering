@@ -1,0 +1,105 @@
+.request {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 4.4rem;
+        }
+    }
+
+    &__title {
+        @include h2 {
+            @include small-tablet {
+                line-height: 100%;
+            }
+        }
+    }
+
+    &__description {
+        @include text24 {
+            @include small-tablet {
+                font-size: 3.2rem;
+                line-height: 120%;
+            }
+        }
+    }
+
+    &__poster {
+        max-width: 61.8rem;
+        width: 100%;
+        border-radius: 2rem;
+
+        @include small-tablet {
+            max-width: 100%;
+            border-radius: 4rem;
+            height: 61rem;
+            overflow: hidden;
+        }
+
+        img {
+            border-radius: inherit;
+
+            @include small-tablet {
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__btn {
+        min-width: 22rem;
+        align-self: flex-start;
+        @include small-tablet {
+            min-width: 38rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+
+        @include small-tablet {
+            gap: 8rem;
+        }
+
+        &-copyright {
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            max-width: 35.7rem;
+            width: 100%;
+
+            @include small-tablet {
+                font-size: 3.2rem;
+                max-width: 100%;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+
+            @include small-tablet {
+                gap: 4.8rem;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            max-width: 52.8rem;
+            width: 100%;
+
+            @include small-tablet {
+                gap: 4.8rem;
+                max-width: 100%;
+            }
+        }
+    }
+}
