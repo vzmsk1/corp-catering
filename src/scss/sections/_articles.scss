@@ -1,0 +1,205 @@
+.articles {
+  margin: 5.6rem 0 18rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5.6rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 7.5rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    @include small-tablet {
+      font-size: 5.6rem;
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  &__subtitle {
+    @include text20;
+    width: 45.3rem;
+    color: $black;
+    text-align: right;
+
+    @include small-tablet {
+      text-align: start;
+      width: 100%;
+      font-size: 3.6rem;
+      line-height: 130%;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 4.7rem;
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.5rem;
+    }
+  }
+
+  &__item {
+    grid-column: span 6;
+    grid-row: span 2;
+
+    &-card {
+      position: relative;
+      width: 75rem;
+
+      @include small-tablet {
+        width: 100%;
+      }
+    }
+
+    &-img-box {
+      border-radius: 2rem;
+      height: 45rem;
+
+      @include small-tablet {
+        height: 54.7rem;
+        border-radius: 4rem;
+      }
+    }
+
+    &-type {
+      position: absolute;
+      bottom: 2.5rem;
+      padding: 1.6rem 3.2rem;
+      background-color: $green-secondary;
+      border-radius: 0rem 2rem 2rem 0rem;
+      @include h3;
+
+      @include small-tablet {
+        bottom: 3.2rem;
+      }
+    }
+
+    &-date {
+      @include text20;
+      margin-bottom: 1.6rem;
+    }
+
+    &-title {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 100%;
+      font-family: 'MullerRegular', sans-serif;
+
+      @include small-tablet {
+        font-size: 5.2rem;
+        line-height: 120%;
+      }
+    }
+
+    &-info {
+      margin-top: 2.4rem;
+
+      @include small-tablet {
+        margin-top: 3.4rem;
+      }
+    }
+
+    &.--long {
+      grid-column: span 12;
+      display: flex;
+      background-color: $lilac;
+      border-radius: 2rem;
+      gap: 3.2rem;
+
+      @include small-tablet {
+        flex-direction: column;
+        gap: 0;
+        border-radius: 4rem;
+      }
+
+      .articles__item-info {
+        margin: 3.2rem 3.2rem 0 0;
+
+        @include small-tablet {
+          margin: 3.5rem 2rem 3rem 3rem;
+        }
+      }
+
+      .articles__item-img-box {
+        width: 75rem;
+
+        @include small-tablet {
+          width: 100%;
+        }
+      }
+
+      .articles__item-title {
+        font-size: 6rem;
+
+        @include small-tablet {
+          font-size: 5.2rem;
+          line-height: 120%;
+        }
+      }
+    }
+
+    img {
+      border-radius: inherit;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__load-more {
+    align-self: center;
+    margin: 4rem auto 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+
+    @include small-tablet {
+      font-size: 3.6rem;
+      line-height: 130%;
+      margin: 8.2rem auto 0;
+      gap: 3rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1.5rem;
+      height: 2.5rem;
+      background-image: url(@img/icons/arrow-down.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transform: translateY(0rem);
+      transition: transform 0.3s ease;
+
+      @include small-tablet {
+        width: 3.1rem;
+        height: 4.9rem;
+      }
+    }
+
+    &:hover {
+      &::after {
+        transform: translateY(0.5rem);
+      }
+    }
+  }
+}
