@@ -1,3 +1,63 @@
 // --------------------------------------------------------------------------
 
+.ellipse {
+    position: absolute;
+    width: 55rem;
+    height: 55rem;
+    border: 1px solid rgba(207, 216, 99, 0.4);
+    border-radius: 50%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 14rem;
+        height: 14rem;
+        border: 1px solid #cfd863;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media (max-width: 48em) {
+        width: 64rem;
+        height: 64rem;
+        &::after {
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+}
+
+.arr-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $orange;
+    @media (max-width: 48em) {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    // .arr-btn__icon
+
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        @media (max-width: 48em) {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
+
+// --------------------------------------------------------------------------
+
+.rub {
+    font-family: 'Circe';
+}
+
 // --------------------------------------------------------------------------
