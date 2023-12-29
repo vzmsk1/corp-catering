@@ -18,6 +18,9 @@ $red: #f02222;
 
 // ------------------------------- base styles ------------------------------
 
+@import 'base/mixins';
+@import 'base/components-d';
+
 // base file
 @import 'base/base';
 
@@ -78,11 +81,7 @@ body {
     }
 }
 
-// --------------------------------------------------------------------------
-
 // ------------------------------- additional ------------------------------
-@import 'base/mixins';
-@import 'base/components-d';
 
 // header / footer
 @import 'components/header';
@@ -94,11 +93,12 @@ body {
 @import 'base/modals';
 
 // sections
+@import 'sections/hero-mainpage';
+@import 'sections/hero-catering';
 @import 'sections/benefits';
 @import 'sections/order';
 @import 'sections/selection';
 @import 'sections/services';
-@import 'sections/hero-mainpage';
 @import 'sections/offers';
 @import 'sections/order-banner';
 @import 'sections/reviews';
@@ -107,3 +107,7 @@ body {
 @import 'sections/eating';
 @import 'sections/catering';
 @import 'sections/seo';
+@import 'sections/features';
+@import 'sections/application';
+@import 'sections/prices';
+@import 'sections/catering-services';

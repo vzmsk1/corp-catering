@@ -1,0 +1,115 @@
+.features {
+    // .features__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .features__bg
+
+    &__bg {
+        position: relative;
+        @media (max-width: 48em) {
+            width: 100%;
+            height: 56rem;
+        }
+    }
+
+    // .features__image-wrap
+
+    &__image-wrap {
+        width: 100%;
+        height: 100%;
+        @media (min-width: 48em) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    // .features__image
+
+    &__image {
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+        @media (max-width: 48em) {
+            border-radius: 4rem;
+        }
+    }
+
+    // .features__content
+
+    &__content {
+        padding: 4rem 2.5rem;
+        border-radius: 2rem;
+        background: rgba(255, 255, 255, 0.7);
+        @media (max-width: 48em) {
+            padding: 3.2rem;
+            border-radius: 4rem;
+        }
+    }
+
+    // .features__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.2rem;
+        @media (max-width: 48em) {
+            row-gap: 6.4rem;
+        }
+    }
+
+    // .features__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+        @media (max-width: 48em) {
+            row-gap: 2.4rem;
+        }
+    }
+
+    // .features__head
+
+    &__head {
+        display: flex;
+        column-gap: 1.2rem;
+        @media (max-width: 48em) {
+            padding-left: 2rem;
+            column-gap: 2.4rem;
+        }
+    }
+
+    // .features__num
+
+    &__num {
+        @include h3;
+        color: $orange;
+    }
+
+    // .features__subtitle
+
+    &__subtitle {
+        @include h3;
+        @media (max-width: 48em) {
+            color: $orange;
+        }
+    }
+
+    // .features__text
+
+    &__text {
+        @include text20;
+        @media (min-width: 48em) {
+            max-width: 67rem;
+        }
+    }
+}

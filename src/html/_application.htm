@@ -1,0 +1,53 @@
+<section class="application">
+    <div class="application__container container">
+        <div class="application__bg">
+            <div class="application__image-wrap">
+                <img
+                    src="@img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
+                    alt=""
+                    class="application__image"
+                />
+            </div>
+        </div>
+        <div class="application__content">
+            <span class="application__title">Оставьте заявку</span>
+            <form data-dev action="#" class="application__form">
+                <div class="application__fields">
+                    <div class="application__input input">
+                        <input
+                            data-validate
+                            data-required
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            data-error="Заполните поле"
+                            placeholder="Имя"
+                            class="input__field"
+                        />
+                    </div>
+                    <div class="application__input input">
+                        <input
+                            data-phone-mask
+                            data-validate
+                            data-required
+                            autocomplete="off"
+                            type="tel"
+                            name="form[]"
+                            data-error="Заполните поле"
+                            placeholder="Телефон"
+                            class="input__field"
+                        />
+                    </div>
+                </div>
+                <div class="application__footer">
+                    <button type="submit" class="application__btn btn">
+                        <span class="btn__text">Отправить</span>
+                    </button>
+                    <p class="application__text">
+                        Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

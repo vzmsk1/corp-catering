@@ -54,6 +54,106 @@
     }
 }
 
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+    @media (max-width: 48em) {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    // .menu-list__group
+
+    &__group,
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+        @media (max-width: 48em) {
+            row-gap: 1.6rem;
+        }
+    }
+
+    // .menu-list__item
+
+    &__item {
+        position: relative;
+        padding-left: 1rem;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0.8rem;
+            left: -0.8rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-image: url(@img/icons/dot.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 48em) {
+            padding-left: 2rem;
+            &::before {
+                top: 1.6rem;
+                left: -1.6rem;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
+
+    // .menu-list__subtitle
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $orange;
+        @media (max-width: 48em) {
+            font-size: 2.8rem;
+        }
+    }
+
+    // .menu-list__list
+
+    &__list {
+        padding-left: 0.8rem;
+        @media (max-width: 48em) {
+            padding-left: 1.6rem;
+        }
+    }
+}
+
+.sl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2.4rem;
+    .swiper-pagination-fraction {
+        width: auto;
+        min-width: 6rem;
+        text-align: center;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 12rem;
+    }
+    .swiper-pagination-total {
+        color: #afafaf;
+    }
+    @media (min-width: 48em) {
+        justify-content: stretch;
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 5rem;
+            max-width: none;
+        }
+    }
+}
+
 // --------------------------------------------------------------------------
 
 .rub {

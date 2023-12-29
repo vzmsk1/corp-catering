@@ -14,6 +14,7 @@ function initSwiperSettings(initializer, payload) {
     return {
         modules: [Navigation, Pagination, EffectFade],
         speed: 2100,
+        loop: true,
         keyboard: {
             enabled: true
         },
@@ -52,7 +53,6 @@ new Swiper(
     '.hero-mainpage__slider',
     initSwiperSettings('hero-mainpage', {
         speed: 800,
-        loop: true,
         loopPreventsSliding: false,
         effect: 'fade',
         fadeEffect: {
@@ -84,6 +84,7 @@ new Swiper(
 new Swiper(
     '.eating-swiper',
     initSwiperSettings('eating', {
+        speed: 800,
         breakpoints: {
             0: {
                 slidesPerView: 1.08,
@@ -92,6 +93,20 @@ new Swiper(
             768: {
                 spaceBetween: rem(2.4),
                 slidesPerView: 3
+            }
+        }
+    })
+);
+
+new Swiper(
+    '.catering-services__slider',
+    initSwiperSettings('catering-services', {
+        speed: 800,
+        loopPreventsSliding: false,
+        spaceBetween: rem(2.4),
+        breakpoints: {
+            768: {
+                slidesPerView: 2
             }
         }
     })

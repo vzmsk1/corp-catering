@@ -18,6 +18,9 @@ utils.dynamicDOM();
 // showmore
 utils.showmore();
 
+// accordion
+utils.accordion();
+
 // ---------------------------------- form ----------------------------------
 
 import * as forms from './utils/form/form.js';

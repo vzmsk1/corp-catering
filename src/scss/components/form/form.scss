@@ -1,3 +1,36 @@
+.order-form {
+    padding: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    @media (max-width: 48em) {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 4rem;
+    }
+
+    // .order-form__input
+
+    &__input {
+        @media (max-width: 48em) {
+            margin-bottom: 5rem;
+            width: 100%;
+        }
+    }
+
+    // .order-form__btn
+
+    &__btn {
+        width: 100%;
+        @media (min-width: 48em) {
+            min-width: 19.7rem;
+            width: auto;
+        }
+    }
+}
+
 .form-error {
     position: absolute;
     top: calc(100% + 0.2rem);
