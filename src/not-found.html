@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="ru">
     @@include('html/_head.htm',{ "title":"404" })
-    <body>
+    <body style="opacity: 0">
         <div class="wrapper">
             @@include('html/_header.htm',{})
-            <main class="main">
-                @@include('html/_not-found.htm',{})
-            </main>
+            <main class="main">@@include('html/_not-found.htm',{})</main>
             @@include('html/_footer.htm',{})
         </div>
         @@include('html/_js.htm',{})

@@ -34,3 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // ------------------------------ window events -----------------------------
     window.addEventListener('resize', resizeHandler);
 });
+
+// --------------------------------------------------------------------------
+
+window.addEventListener('load', function () {
+    document.body.style.opacity = 1;
+});

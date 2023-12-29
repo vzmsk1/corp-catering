@@ -49,6 +49,19 @@
         }
     }
 
+    &__title,
+    &__text {
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+        &._visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     // .hero-mainpage__content
 
     &__content {
@@ -242,6 +255,13 @@
 // --------------------------------------------------------------------------
 
 .slide-hero-mainpage {
+    // .slide-hero-mainpage__title
+
+    &__title,
+    &__text {
+        display: none;
+    }
+
     // .slide-hero-mainpage__image-wrap
 
     &__image-wrap {

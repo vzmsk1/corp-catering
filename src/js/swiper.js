@@ -8,6 +8,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/grid';
 
+function changeHeroText(activeSlide) {
+    const title = document.querySelector('.hero-mainpage__title');
+    const text = document.querySelector('.hero-mainpage__text');
+    title.classList.remove('_visible');
+    text.classList.remove('_visible');
+    setTimeout(() => {
+        title.classList.add('_visible');
+        text.classList.add('_visible');
+        title.innerHTML = activeSlide.querySelector('.slide-hero-mainpage__title').innerHTML;
+        text.innerHTML = activeSlide.querySelector('.slide-hero-mainpage__text').innerHTML;
+    }, 100);
+}
+
 function initSwiperSettings(initializer, payload) {
     if (!document.querySelector(`.${initializer}`)) return;
 
@@ -57,6 +70,14 @@ new Swiper(
         effect: 'fade',
         fadeEffect: {
             crossFade: true
+        },
+        on: {
+            init: (swiper) => {
+                changeHeroText(swiper.slides[swiper.activeIndex]);
+            },
+            slideChange: (swiper) => {
+                changeHeroText(swiper.slides[swiper.activeIndex]);
+            }
         }
     })
 );
