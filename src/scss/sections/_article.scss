@@ -109,10 +109,32 @@
       &.--long {
         width: 100%;
       }
+      &.--double {
+        display: flex;
+        justify-content: space-between;
+        @include small-tablet {
+          flex-direction: column;
+          gap: 3.2rem;
+          height: 100%;
+        }
+      }
 
       img {
         height: 100%;
         object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+
+    &-img-small {
+      width: 48.3rem;
+      border-radius: 2rem;
+      @include small-tablet {
+        width: 100%;
+        height: 62rem;
+        border-radius: 4rem;
+      }
+      img {
         border-radius: inherit;
       }
     }
