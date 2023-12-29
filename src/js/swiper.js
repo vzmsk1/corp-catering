@@ -132,3 +132,28 @@ new Swiper(
         }
     })
 );
+
+if (document.querySelectorAll('.menu-offer__slider').length) {
+    document.querySelectorAll('.menu-offer__slider').forEach((slider) => {
+        new Swiper(slider, {
+            modules: [Navigation, Pagination, EffectFade],
+            speed: 800,
+            loop: true,
+            slidesPerView: 1,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            navigation: {
+                prevEl: slider.parentElement.querySelector('.menu-offer__button-prev'),
+                nextEl: slider.parentElement.querySelector('.menu-offer__button-next')
+            },
+            pagination: {
+                el: slider.parentElement.querySelector('.menu-offer__fraction'),
+                type: 'fraction',
+                formatFractionCurrent: (num) => (num > 9 ? num : '0' + num),
+                formatFractionTotal: (num) => (num > 9 ? num : '0' + num)
+            }
+        });
+    });
+}

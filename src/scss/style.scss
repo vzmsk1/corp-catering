@@ -37,6 +37,9 @@ body {
     background-image: url(@img/bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 48em) {
+        background-image: url(@img/bg-mobile.svg);
+    }
 }
 
 // wrapper
@@ -122,3 +125,5 @@ body {
 @import 'sections/delivery';
 @import 'sections/payment';
 @import 'sections/working';
+@import 'sections/service-info';
+@import 'sections/menu-offers';
