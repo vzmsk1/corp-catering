@@ -15,6 +15,9 @@ utils.menuInit();
 // dynamic dom
 utils.dynamicDOM();
 
+// showmore
+utils.showmore();
+
 // ---------------------------------- form ----------------------------------
 
 import * as forms from './utils/form/form.js';
