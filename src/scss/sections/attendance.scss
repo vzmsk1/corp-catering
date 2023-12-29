@@ -1,5 +1,44 @@
 .attendance {
     margin-top: 5.6rem;
+    position: relative;
+
+    &::after {
+        @include pseudo {
+            width: 83.2rem;
+            height: 83.2rem;
+            border-radius: 50%;
+            border: 0.1rem solid rgba(207, 216, 99, 0.4);
+            z-index: -2;
+            right: -22rem;
+            top: -4rem;
+
+            @include small-tablet {
+                top: 6rem;
+                width: 64rem;
+                height: 64rem;
+                right: -25rem;
+            }
+        }
+    }
+
+    &::before {
+        @include pseudo {
+            width: 21.7043rem;
+            height: 21.7043rem;
+            border-radius: 50%;
+            border: 0.1rem solid rgba(207, 216, 99, 0.4);
+            z-index: -1;
+            right: 9rem;
+            top: 26rem;
+
+            @include small-tablet {
+                top: 31rem;
+                width: 16rem;
+                height: 16rem;
+                right: -1rem;
+            }
+        }
+    }
 
     @include small-tablet {
         margin-top: 5.8rem;
