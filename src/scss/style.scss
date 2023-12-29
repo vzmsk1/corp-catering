@@ -3,6 +3,7 @@
 // colors
 $black: #1d1d1d;
 $orange: #f4996b;
+$light-orange: #f7c0a6;
 $green: #d1f39d;
 $green-secondary: #cfffd3;
 $darkGreen: #0b4333;
@@ -47,6 +48,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     max-width: 1920px;
+    overflow-x: hidden;
 
     // press footer
     > main {
@@ -115,3 +117,7 @@ body {
 @import 'sections/articles';
 @import 'sections/article';
 @import 'sections/not-found';
+@import 'sections/contacts';
+@import 'sections/delivery';
+@import 'sections/payment';
+@import 'sections/working';
