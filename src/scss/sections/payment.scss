@@ -1,0 +1,255 @@
+.payment {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+
+        @include small-tablet {
+            gap: 8rem;
+        }
+    }
+
+    &__placement {
+        display: flex;
+
+        @include small-tablet {
+            flex-direction: column-reverse;
+        }
+
+        &-map {
+            max-width: 74.8rem;
+            width: 100%;
+            border-radius: 2rem;
+
+            @include small-tablet {
+                max-width: 100%;
+                border-radius: 4rem;
+                height: 52.8rem;
+            }
+
+            img {
+                border-radius: inherit;
+            }
+        }
+
+        &-title {
+            @include h3;
+        }
+
+        &-info {
+            border-radius: 2rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 4rem 2.4rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10.4rem;
+
+            @include small-tablet {
+                padding: 3.2rem;
+                gap: 4.8rem;
+            }
+
+            &-block {
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem;
+
+                @include small-tablet {
+                    gap: 3.2rem;
+                }
+
+                &:nth-child(2) {
+                    padding-top: 3.9rem;
+                    border-top: 0.1rem solid #afafaf;
+
+                    @include small-tablet {
+                        padding-top: 4.8rem;
+                    }
+
+                    .payment__placement-placemark-name {
+                        p {
+                            max-width: 45.1rem;
+                            width: 100%;
+
+                            @include small-tablet {
+                                max-width: 50rem;
+                            }
+                        }
+                    }
+
+                    .payment__placement-placemark-price {
+                        display: block;
+                        max-width: 22.9rem;
+
+                        @include small-tablet {
+                            max-width: 34.9rem;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-placemarks {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            @include small-tablet {
+                gap: 3.2rem;
+            }
+        }
+
+        &-placemark {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @include small-tablet {
+                flex-direction: column;
+                gap: 1.6rem;
+            }
+
+            &-name {
+                display: flex;
+                align-items: flex-start;
+                gap: 0.4rem;
+
+                @include small-tablet {
+                    gap: 0.8rem;
+                }
+
+                svg {
+                    @include sizes(2.4rem, 2.4rem);
+
+                    @include small-tablet {
+                        @include sizes(4.8rem, 4.8rem);
+                    }
+                }
+
+                p {
+                    @include text20;
+
+                    @include small-tablet {
+                        @include text16;
+                    }
+                }
+            }
+
+            &-price {
+                @include text24;
+                color: $orange;
+                text-align: right;
+
+                @include small-tablet {
+                    @include text18;
+                }
+            }
+        }
+    }
+
+    &__order {
+        &-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5.6rem;
+
+            @include small-tablet {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4.8rem;
+                margin-bottom: 8rem;
+                max-width: 61.7rem;
+            }
+        }
+
+        &-title {
+            @include h2;
+
+            @include small-tablet {
+                @include h2-mobile;
+            }
+        }
+
+        &-description {
+            @include text20;
+            text-align: right;
+            max-width: 30.7rem;
+
+            @include small-tablet {
+                max-width: 100%;
+                text-align: left;
+                @include text18;
+            }
+        }
+
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(49.1rem, 1fr));
+            gap: 2.4rem;
+
+            @include small-tablet {
+                display: flex;
+                flex-direction: column;
+                gap: 4.8rem;
+            }
+        }
+
+        &-item {
+            padding: 6rem 3.2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            @include small-tablet {
+                padding: 8rem 6.4rem;
+                border-radius: 4rem;
+            }
+
+            &:nth-child(3n + 1) {
+                background: $lilac;
+            }
+            &:nth-child(3n + 2) {
+                background: $light-orange;
+            }
+            &:nth-child(3n + 3) {
+                background: $green-secondary;
+            }
+
+            &-icon {
+                @include sizes(6rem, 6rem);
+                margin-bottom: 3.2rem;
+
+                @include small-tablet {
+                    @include sizes(8rem, 8rem);
+                    margin-bottom: 4.8rem;
+                }
+            }
+
+            &-title {
+                display: block;
+                margin-bottom: 0.8rem;
+                @include textCaps16;
+                font-weight: 700;
+
+                @include textCaps14 {
+                    @include small-tablet {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &-details {
+                @include text20;
+
+                @include small-tablet {
+                    @include text16;
+                }
+            }
+        }
+    }
+}

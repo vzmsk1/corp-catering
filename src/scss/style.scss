@@ -3,6 +3,7 @@
 // colors
 $black: #1d1d1d;
 $orange: #f4996b;
+$light-orange: #f7c0a6;
 $green: #d1f39d;
 $green-secondary: #cfffd3;
 $darkGreen: #0b4333;
@@ -109,3 +110,4 @@ body {
 @import 'sections/seo';
 @import 'sections/contacts';
 @import 'sections/delivery';
+@import 'sections/payment';
