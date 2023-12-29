@@ -129,9 +129,9 @@
     &__group {
     }
 
-    // .hero-mainpage__form
+    // .hero-mainpage__order-form
 
-    &__form {
+    &__order-form {
     }
 
     // .hero-mainpage__carousel
@@ -175,12 +175,7 @@
     // .hero-mainpage__navigation
 
     &__navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 2.4rem;
         @media (min-width: 48em) {
-            justify-content: stretch;
             align-self: flex-end;
             transform: translateX(-10%);
         }
@@ -200,11 +195,6 @@
     // .hero-mainpage__fraction
 
     &__fraction {
-        min-width: 6rem;
-        text-align: center;
-        .swiper-pagination-total {
-            color: $gray;
-        }
     }
 
     // .hero-mainpage__button-next
@@ -249,41 +239,6 @@
         @include text20;
     }
 }
-// --------------------------------------------------------------------------
-
-.form-hero-mainpage {
-    padding: 3.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    @media (max-width: 48em) {
-        flex-direction: column;
-        align-items: stretch;
-        border-radius: 4rem;
-    }
-
-    // .form-hero-mainpage__input
-
-    &__input {
-        @media (max-width: 48em) {
-            margin-bottom: 5rem;
-            width: 100%;
-        }
-    }
-
-    // .form-hero-mainpage__btn
-
-    &__btn {
-        width: 100%;
-        @media (min-width: 48em) {
-            min-width: 19.7rem;
-            width: auto;
-        }
-    }
-}
-
 // --------------------------------------------------------------------------
 
 .slide-hero-mainpage {

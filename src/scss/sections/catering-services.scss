@@ -1,0 +1,131 @@
+.catering-services {
+    // .catering-services__container
+
+    &__container {
+        display: flex;
+        column-gap: 15.4rem;
+        @media (max-width: 48em) {
+            flex-direction: column;
+        }
+    }
+
+    // .catering-services__content
+
+    &__content {
+        margin-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            margin-bottom: 0;
+            flex: 0 0 36.2rem;
+        }
+    }
+
+    // .catering-services__title
+
+    &__title {
+        @include h1;
+        margin-bottom: 3.2rem;
+        @media (max-width: 48em) {
+            margin-bottom: 5rem;
+            font-size: 6rem;
+        }
+    }
+
+    // .catering-services__text
+
+    &__text {
+        @include text20;
+        margin-bottom: auto;
+        @media (max-width: 48em) {
+            margin-bottom: 0;
+        }
+    }
+
+    // .catering-services__navigation
+
+    &__navigation {
+    }
+
+    // .catering-services__carousel
+
+    &__carousel {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        @media (min-width: 48em) {
+            display: block;
+            flex: 1 1 auto;
+        }
+    }
+
+    // .catering-services__slider
+
+    &__slider {
+        &.swiper {
+            margin: 0;
+            @media (max-width: 48em) {
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+
+    // .catering-services__wrapper
+
+    &__wrapper {
+    }
+
+    // .catering-services__slide
+
+    &__slide {
+    }
+
+    // .catering-services__navigation
+
+    &__navigation {
+    }
+}
+
+// --------------------------------------------------------------------------
+
+.slide-catering-services {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+
+    // .slide-catering-services__image-wrap
+
+    &__image-wrap {
+        margin-bottom: 1.6rem;
+        height: 61.6rem;
+        border-radius: 2rem;
+        @media (max-width: 48em) {
+            margin-bottom: 3.2rem;
+            height: 92rem;
+            border-radius: 4rem;
+        }
+    }
+
+    // .slide-catering-services__image
+
+    &__image {
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+        @media (max-width: 48em) {
+            border-radius: 4rem;
+        }
+    }
+
+    // .slide-catering-services__subtitle
+
+    &__subtitle {
+        align-self: flex-start;
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 120%;
+        @media (max-width: 48em) {
+            font-size: 4rem;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.accordion-item {
+    // .accordion-item__title
+
+    &__title {
+        padding-bottom: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid $gray;
+        @media (max-width: 48em) {
+            padding-bottom: 1.6rem;
+            display: grid;
+            grid-template: repeat(2, auto) / 1fr auto;
+        }
+    }
+
+    // .accordion-item__title-txt
+
+    &__title-txt {
+        @include h3;
+        margin-right: auto;
+    }
+
+    // .accordion-item__group
+
+    &__group {
+    }
+
+    // .accordion-item__price
+
+    &__price {
+        @include h3;
+        margin-right: 2rem;
+        @media (max-width: 48em) {
+            margin-right: 0;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+
+    // .accordion-item__arr-btn
+
+    &__arr-btn {
+        ._accordion-active & {
+            .arr-btn__icon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    // .accordion-item__body
+
+    &__body {
+    }
+
+    // .accordion-item__inner
+
+    &__inner {
+        padding-top: 1.6rem;
+        @media (max-width: 48em) {
+            padding-top: 3.2rem;
+        }
+    }
+}
