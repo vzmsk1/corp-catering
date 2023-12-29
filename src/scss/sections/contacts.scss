@@ -17,6 +17,15 @@
         #map {
             width: 100%;
             height: 100%;
+
+            [class*='inner-panes'] {
+                border-radius: 2rem 0rem 0rem 2rem;
+            }
+
+            .ymaps-2-1-79-map {
+                width: 100%;
+                border-radius: 2rem 0rem 0rem 2rem;
+            }
         }
     }
 
