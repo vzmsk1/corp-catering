@@ -22,8 +22,8 @@
     line-height: 100%;
     font-weight: 400;
     margin-bottom: 5.6rem;
-    font-size: 8.6rem;
     font-style: normal;
+    font-size: 8.6rem;
     letter-spacing: -0.086rem;
 
     @include small-tablet {
@@ -34,11 +34,22 @@
     @content;
 }
 
+@mixin h1-mobile {
+    font-family: 'MullerRegular', sans-serif;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+
+    @content;
+}
+
 @mixin h2() {
     font-size: 6rem;
     font-family: 'MullerRegular', sans-serif;
     line-height: 100%;
     font-weight: 400;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 6.8rem;
@@ -48,10 +59,20 @@
     @content;
 }
 
+@mixin h2-mobile() {
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    @content;
+}
+
 @mixin h3() {
     font-size: 2.8rem;
     line-height: 120%;
     font-weight: 700;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 4rem;
@@ -65,6 +86,7 @@
     font-size: 1.8rem;
     line-height: 120%;
     font-weight: 400;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 3.6rem;
@@ -78,6 +100,7 @@
     font-size: 2.4rem;
     line-height: 130%;
     font-weight: 400;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 3.6rem;
@@ -87,6 +110,7 @@
 }
 
 @mixin text16() {
+    font-style: normal;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: normal;
@@ -100,12 +124,16 @@
 }
 
 @mixin textCaps16() {
-    @include textCaps16 {
+    font-style: normal;
+
+    @include text16 {
         text-transform: uppercase;
     }
 }
 
 @mixin textCaps14() {
+    font-style: normal;
+
     @include small-tablet {
         font-size: 2.8rem;
         line-height: normal;
@@ -120,6 +148,7 @@
     font-weight: 700;
     line-height: 120%;
     color: #fff;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 3.6rem;
@@ -133,10 +162,16 @@
     font-size: 2rem;
     font-weight: 400;
     line-height: 120%;
+    font-style: normal;
 
     @include small-tablet {
         font-size: 3.2rem;
     }
+}
+
+@mixin button-mobile() {
+    width: 100%;
+    text-align: center;
 }
 
 .section-title {
@@ -148,6 +183,15 @@
     background: $orange;
     border-radius: 10rem;
     width: fit-content;
+    transition:
+        0.3s background ease,
+        0.3s color ease;
+    font-style: normal;
+
+    &:hover {
+        color: $black;
+        background: $green;
+    }
 
     @include textButton {
         color: #fff;
@@ -165,6 +209,7 @@
     gap: 1.6rem;
     margin-top: 5.6rem;
     width: fit-content;
+    font-style: normal;
 
     @include small-tablet {
         gap: 3rem;
@@ -199,7 +244,7 @@
         margin: 0;
         padding: 0;
 
-        @include small-tablet{
+        @include small-tablet {
             @include sizes(11.6rem, 5.3rem);
         }
 
@@ -232,7 +277,7 @@
         line-height: normal;
         width: 100%;
 
-        @include small-tablet{
+        @include small-tablet {
             padding-bottom: 1.6rem;
             font-size: 3.6rem;
         }
@@ -244,9 +289,43 @@
             font-weight: 400;
             line-height: normal;
 
-            @include small-tablet{
+            @include small-tablet {
                 padding-bottom: 1.6rem;
                 font-size: 3.6rem;
+            }
+        }
+    }
+}
+
+._showmore-active [data-showmore-button] span:last-child {
+    display: flex;
+}
+
+.showmore-button {
+    @include small-tablet {
+        margin-top: 2.4rem;
+
+        span {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            white-space: nowrap;
+            color: #1d1d1d;
+            font-size: 3.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+
+            svg {
+                max-width: 4.4rem;
+                width: 100%;
+                height: 4.6rem;
+            }
+
+            &:last-child {
+                svg {
+                    transform: rotate(-180deg);
+                }
             }
         }
     }
