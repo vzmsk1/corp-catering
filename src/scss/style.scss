@@ -48,6 +48,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     max-width: 1920px;
+    overflow-x: hidden;
 
     // press footer
     > main {
