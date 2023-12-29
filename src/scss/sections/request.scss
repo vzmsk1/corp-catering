@@ -12,10 +12,10 @@
 
     &__title {
         @include h2 {
-            @include small-tablet{
+            @include small-tablet {
                 line-height: 100%;
             }
-        };
+        }
     }
 
     &__description {
@@ -42,9 +42,17 @@
         img {
             border-radius: inherit;
 
-            @include small-tablet{
+            @include small-tablet {
                 object-fit: cover;
             }
+        }
+    }
+
+    &__btn {
+        min-width: 22rem;
+        align-self: flex-start;
+        @include small-tablet {
+            min-width: 38rem;
         }
     }
 

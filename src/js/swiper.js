@@ -64,6 +64,7 @@ new Swiper(
 new Swiper(
     '.reviews-swiper',
     initSwiperSettings('reviews', {
+        speed: 800,
         breakpoints: {
             0: {
                 slidesPerView: 1,

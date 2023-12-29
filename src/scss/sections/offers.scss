@@ -319,9 +319,10 @@
 
 .menu-offer-card {
     display: flex;
+    gap: 3.2rem;
     @media (max-width: 48em) {
         flex-direction: column;
-        row-gap: 1.6rem;
+        gap: 1.6rem;
     }
 
     // .menu-offer-card__item
