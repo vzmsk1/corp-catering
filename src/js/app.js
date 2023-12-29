@@ -41,6 +41,10 @@ import './libs/dynamic_dom.js';
 
 import './libs/modals.js';
 
+// --------------------------------- yandex-map ---------------------------------
+
+import './libs/ymaps';
+
 // ------------------------------- own scripts ------------------------------
 
 import './utils/script.js';
