@@ -1,0 +1,104 @@
+.image-text {
+    // .image-text__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+    }
+
+    // .image-text__image-wrap
+
+    &__image-wrap {
+        position: relative;
+        height: 48rem;
+        @media (min-width: 48em) {
+            width: 87.7rem;
+            height: 100%;
+            min-height: 51.9rem;
+        }
+    }
+
+    // .image-text__image
+
+    &__image {
+        height: 100%;
+        border-radius: 4rem;
+        object-fit: cover;
+        @media (min-width: 48em) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 2rem;
+        }
+    }
+
+    // .image-text__content
+
+    &__content {
+        padding: 10.3rem 8.6rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        background-color: $white;
+        @media (max-width: 48em) {
+            padding: 4rem 3.2rem;
+            border-radius: 4rem;
+        }
+    }
+
+    // .image-text__head
+
+    &__head {
+        margin-bottom: 3.2rem;
+        padding-bottom: 4.8rem;
+        border-bottom: 1px solid $orange;
+        @media (max-width: 48em) {
+            margin-bottom: 5rem;
+            padding-bottom: 6.4rem;
+        }
+    }
+
+    // .image-text__title
+
+    &__title {
+        @include h2;
+        margin: 0;
+        @media (max-width: 48em) {
+            margin: 0;
+            font-size: 5rem;
+        }
+    }
+
+    // .image-text__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    // .image-text__text
+
+    &__text {
+        @include text20;
+        margin-bottom: 5rem;
+        @media (min-width: 48em) {
+            margin-bottom: 3.2rem;
+            max-width: 47rem;
+        }
+    }
+
+    // .image-text__btn
+
+    &__btn {
+        min-width: 31.6rem;
+        @media (max-width: 48em) {
+            width: 100%;
+        }
+    }
+}
