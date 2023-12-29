@@ -60,3 +60,38 @@ new Swiper(
         }
     })
 );
+
+new Swiper(
+    '.reviews-swiper',
+    initSwiperSettings('reviews', {
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: rem(1.6),
+                pagination: {
+                    el: `.reviews__fraction-mobile`
+                }
+            },
+            768: {
+                spaceBetween: rem(2.4),
+                slidesPerView: 2
+            }
+        }
+    })
+);
+
+new Swiper(
+    '.eating-swiper',
+    initSwiperSettings('eating', {
+        breakpoints: {
+            0: {
+                slidesPerView: 1.08,
+                spaceBetween: rem(1.6)
+            },
+            768: {
+                spaceBetween: rem(2.4),
+                slidesPerView: 3
+            }
+        }
+    })
+);

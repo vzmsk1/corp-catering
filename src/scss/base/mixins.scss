@@ -29,11 +29,21 @@
         font-weight: 700;
         line-height: normal;
 
+        @include small-tablet {
+            margin-top: 2.2rem;
+            justify-content: space-between;
+            font-size: 3.6rem;
+        }
+
         .swiper-pagination-current {
             color: $darkGreen;
             font-size: 2rem;
             font-weight: 700;
             line-height: normal;
+
+            @include small-tablet {
+                font-size: 3.6rem;
+            }
         }
 
         .swiper-pagination-total {
@@ -41,6 +51,16 @@
             font-size: 2rem;
             font-weight: 700;
             line-height: normal;
+
+            @include small-tablet {
+                font-size: 3.6rem;
+            }
+        }
+
+        .swiper-pagination-fraction {
+            @include small-tablet{
+                width: max-content;
+            }
         }
     }
 
