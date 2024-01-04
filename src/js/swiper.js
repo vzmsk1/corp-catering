@@ -157,3 +157,13 @@ if (document.querySelectorAll('.menu-offer__slider').length) {
         });
     });
 }
+
+new Swiper(
+    '.employees-swiper',
+    initSwiperSettings('employees', {
+        speed: 800,
+        loopPreventsSliding: false,
+        spaceBetween: rem(4),
+        slidesPerView: 1,
+    })
+);
