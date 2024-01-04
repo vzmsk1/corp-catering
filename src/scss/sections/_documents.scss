@@ -1,0 +1,118 @@
+.documents {
+  &__title {
+    margin-bottom: 3.2rem;
+    @include small-tablet{
+      font-size: 5.2rem;
+      line-height: 120%;
+      margin-bottom: 0;
+      letter-spacing: normal;
+    }
+  }
+  &__display {
+    display: flex;
+    justify-content: space-between;
+    @include small-tablet{
+      flex-direction: column-reverse;
+      gap: 2.8rem;
+    }
+  }
+  &__list {
+    width: 87.7rem;
+    @include small-tablet{
+      width: 100%;
+    }
+    &-item {
+      display: flex;
+      border-bottom: solid 0.1rem $gray;
+      padding: 2.4rem 0;
+      gap: 2.4rem;
+      @include small-tablet{
+        gap: 4.8rem;
+        padding: 4.8rem 0 3.2rem;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &-num {
+      @include h3();
+      color: $orange;
+      width: 10.4rem;
+      font-weight: 700;
+      @include small-tablet{
+        font-size: 4rem;
+        line-height: 120%;
+        width: auto;
+      }
+    }
+    &-title {
+      @include text20();
+      line-height: 120%;
+      width: 75rem;
+      @include small-tablet{
+        font-size: 3.2rem;
+        width: 60rem;
+      }
+    }
+  }
+  &__aside {
+    width: 49.1rem;
+    margin-top: 1rem;
+    @include small-tablet{
+      width: 100%;
+    }
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 2.4rem 0;
+      margin-bottom: 2.4rem;
+      border-bottom: solid 0.1rem $gray;
+      @include small-tablet{
+        font-size: 2.8rem;
+        font-weight: 700;
+        padding: 3.2rem 0;
+        margin-bottom: 3.2rem;
+      }
+    }
+    &-text {
+      @include text20();
+      line-height: 120%;
+      margin-bottom: 4rem;
+      @include small-tablet{
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+      }
+    }
+    &-list {
+      display: flex;
+      gap: 6rem;
+    }
+    &-item {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      @include small-tablet{
+        width: 30rem;
+      }
+      span {
+        font-family: 'MullerRegular', sans-serif;
+        font-size: 6rem;
+        font-weight: 400;
+        line-height: 120%;
+        @include small-tablet{
+          font-size: 5.2rem;
+        }
+      }
+      p {
+        font-size: 2rem;
+        line-height: 120%;
+        @include small-tablet{
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
+}
