@@ -22,15 +22,17 @@
 						<span></span>
 					</button>
 					<div class="menu__body">
-						<nav class="menu__nav">
-							<a href="#" class="menu__link"><span class="menu__link-txt bold">Корпоративное питание</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Доставка</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Контакты</span></a>
-						</nav>
-						<div class="menu__footer"></div>
-						<span class="menu__ellipse ellipse"></span>
+						<div class="menu__inner">
+							<nav class="menu__nav">
+								<a href="#" class="menu__link"><span class="menu__link-txt bold">Корпоративное питание</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Доставка</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Контакты</span></a>
+							</nav>
+							<div class="menu__footer"></div>
+							<span class="menu__ellipse ellipse"></span>
+						</div>
 					</div>
 				</div>
 				<a href="tel:74991362923" class="header__call-icon call-icon-header"><img src="img/icons/call.svg" alt="" class="call-icon-header__image" /></a>
@@ -44,26 +46,28 @@
 			</div>
 		</header>
 
-		<main class="main">
+		<main class="main delivery-page">
 			<section class="delivery">
 				<div class="container">
 					<div class="delivery__content">
 						<div class="delivery__icon">
-							<img src="img/icons/star-white.svg" alt="">
+							<img src="img/icons/star-white.svg" alt="" />
 						</div>
 
 						<div class="delivery__info">
 							<h1 class="delivery__title section-title">Доставка и оплата</h1>
 
 							<p class="delivery__description">
-								Доставка обедов, завтраков  и ужинов в офис и на предприятия
+								Доставка обедов, завтраков и ужинов в офис и на предприятия
 							</p>
 
-							<button class="delivery__button button-primary">Заявка</button>
+							<button data-modal="#applicationModal" type="button" class="delivery__button button-primary">
+								Заявка
+							</button>
 						</div>
 
 						<div class="delivery__poster">
-							<img src="img/delivery/delivery-poster.webp" alt="">
+							<img src="img/delivery/delivery-poster.webp" alt="" />
 						</div>
 					</div>
 				</div>

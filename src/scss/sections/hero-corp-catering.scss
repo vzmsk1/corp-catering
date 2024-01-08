@@ -1,5 +1,8 @@
 .hero-corp-catering {
     margin-top: 5rem;
+    @media (max-width: 48em) {
+        margin-top: 8rem;
+    }
 
     // .hero-corp-catering__container
 

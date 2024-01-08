@@ -140,6 +140,16 @@
     .swiper-button-next,
     .swiper-button-prev {
         width: 12rem;
+        path {
+            transition: fill 0.3s ease;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                path {
+                    fill: $orange;
+                }
+            }
+        }
     }
     .swiper-pagination-total {
         color: #afafaf;

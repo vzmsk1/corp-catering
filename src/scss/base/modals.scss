@@ -241,120 +241,125 @@ body::after {
     }
 }
 
+// --------------------------------------------------------------------------
 .certificates-modal {
+    padding: 0;
 
-  padding: 0;
+    // .application-modal__inner
 
-  // .application-modal__inner
-
-  &__inner {
-    position: relative;
-    display: flex;
-    column-gap: 2.4rem;
-    width: 100%;
-
-    @media (max-width: 48em) {
-      padding: 3.2rem 0;
-      flex-direction: column-reverse;
-      border-radius: 4rem;
-    }
-  }
-
-  // .application-modal__content
-
-  &__content {
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: column;
-    width: 38.3rem;
-    width: 100%;
-    height: 100%;
-
-    @media (min-width: 48em) {
-      margin-bottom: 0;
-      padding: 1.6rem 0;
-    }
-  }
-
-  // .application-modal__close
-
-  &__close {
-    position: fixed;
-    top: 5rem;
-    right: 20rem;
-    width: 7.2rem;
-    height: 7.2rem;
-    z-index: 8;
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: #FFF;
-
-    @media (max-width: 48em) {
-      top: 4.8rem;
-      right: 4.8rem;
-      width: 10rem;
-      height: 10rem;
-      padding: 3rem;
-    }
-  }
-
-  // .application-modal__close-icon
-
-  &__close-icon {
-    height: 100%;
-    object-fit: contain;
-  }
-
-  &-swiper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6rem;
-    &.block {
-      pointer-events: none;
-    }
-  }
-
-  &__slide {
-    &-img {
-      width: 20%;
-      height: 100%;
-      cursor: zoom-in;
-      transition: width 0.4s ease, padding 0.4s ease, min-width 0.4s ease;
-      @media (max-width: 48em) {
+    &__inner {
+        position: relative;
+        display: flex;
+        column-gap: 2.4rem;
         width: 100%;
-        padding: 8rem 3.2rem 0 3.2rem;
-        min-width: 50rem;
-      }
-      &.large {
-        width: 68%;
-        cursor: zoom-out;
+
         @media (max-width: 48em) {
-          width: 100%;
-          padding: 0rem;
-          min-width: 117rem;
+            padding: 15rem 0 3.2rem 0;
+            flex-direction: column-reverse;
+            border-radius: 4rem;
         }
-      }
     }
-  }
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
+    // .application-modal__content
 
-  @include swiper-navigation;
+    &__content {
+        margin-bottom: 5rem;
+        padding: 0 3.2rem;
+        display: flex;
+        flex-direction: column;
+        width: 38.3rem;
+        width: 100%;
+        height: 100%;
 
-  &__navigation {
-    padding: 2.4rem 3.2rem;
-    border-radius: 10rem;
-    background-color: #FFF;
-    @media (max-width: 48em) {
-      width: 100%;
+        @media (min-width: 48em) {
+            margin-bottom: 0;
+            padding: 1.6rem 0;
+        }
     }
-    &.hidden {
-      display: none;
+
+    // .application-modal__close
+
+    &__close {
+        position: fixed;
+        top: 5rem;
+        right: 20rem;
+        width: 7.2rem;
+        height: 7.2rem;
+        z-index: 8;
+        padding: 2rem;
+        border-radius: 50%;
+        background-color: #fff;
+        &:not(.modal_show &) {
+            display: none;
+        }
+
+        @media (max-width: 48em) {
+            top: 4.8rem;
+            right: 4.8rem;
+            width: 10rem;
+            height: 10rem;
+            padding: 3rem;
+        }
     }
-  }
+
+    // .application-modal__close-icon
+
+    &__close-icon {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &-swiper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    &__slide {
+        &-img {
+            width: 20%;
+            height: 100%;
+            cursor: zoom-in;
+            transition:
+                width 0.4s ease,
+                padding 0.4s ease,
+                min-width 0.4s ease;
+            @media (max-width: 48em) {
+                width: 100%;
+                padding: 8rem 3.2rem 0 3.2rem;
+                min-width: 50rem;
+            }
+            &.large {
+                width: 68%;
+                cursor: zoom-out;
+                @media (max-width: 48em) {
+                    width: 100%;
+                    padding: 0rem;
+                    min-width: 117rem;
+                }
+            }
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include swiper-navigation;
+
+    &__navigation {
+        padding: 2.4rem 3.2rem;
+        border-radius: 10rem;
+        background-color: #fff;
+        @media (max-width: 48em) {
+            width: 100%;
+            justify-content: center;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
 }

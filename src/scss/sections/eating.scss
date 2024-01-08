@@ -1,6 +1,12 @@
 .eating {
+    .services-page & {
+        margin-bottom: 26rem;
+    }
     @include small-tablet {
         overflow: hidden;
+        .services-page & {
+            margin-bottom: 37rem;
+        }
     }
 
     &__title {

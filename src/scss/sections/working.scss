@@ -1,4 +1,13 @@
 .working {
+    .delivery-page & {
+        margin-bottom: 26.8rem;
+    }
+    @include small-tablet {
+        .delivery-page & {
+            margin-bottom: 37rem;
+        }
+    }
+
     &__title {
         margin-bottom: 7rem;
 
