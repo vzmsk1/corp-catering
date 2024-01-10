@@ -176,6 +176,9 @@
 
 .section-title {
     @include h1;
+    @media (max-width: 48em) {
+        font-size: 6rem;
+    }
 }
 
 .button-primary {
