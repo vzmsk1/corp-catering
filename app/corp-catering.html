@@ -1,711 +1,922 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <title>Корпоративное питание</title>
-        <meta charset="UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- <style>body{opacity: 0;}</style> -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <!-- <meta name="robots" content="noindex, nofollow"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
 
-    <body style="opacity: 0">
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container container">
-                    <a href="#" class="header__logo logo-header"
-                        ><img src="img/logo.svg" alt="" class="logo-header__image"
-                    /></a>
-                    <div class="header__menu menu">
-                        <button type="button" class="menu__hamburger hamburger">
-                            <span></span>
-                        </button>
-                        <div class="menu__body">
-                            <nav class="menu__nav">
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt bold">Корпоративное питание</span></a
-                                >
-                                <a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt">Доставка</span></a
-                                >
-                                <a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt">Контакты</span></a
-                                >
-                            </nav>
-                            <div class="menu__footer"></div>
-                            <span class="menu__ellipse ellipse"></span>
-                        </div>
-                    </div>
-                    <a href="tel:74991362923" class="header__call-icon call-icon-header"
-                        ><img src="img/icons/call.svg" alt="" class="call-icon-header__image"
-                    /></a>
-                    <div data-da=".menu__footer,768,first" class="header__call call-header">
-                        <a href="tel:74991362923" class="call-header__link"
-                            ><span class="call-header__link-txt">+7 (499) 136 29 23</span></a
-                        >
-                        <span class="call-header__text">с 9:00 до 21:00</span>
-                    </div>
-                    <button
-                        data-modal="#applicationModal"
-                        data-da=".menu__footer,768,last"
-                        type="button"
-                        class="header__btn btn"
-                    >
-                        <span class="btn__text">Оставить заявку</span>
-                    </button>
-                </div>
-            </header>
+<head>
+	<title>Корпоративное питание</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-            <main class="main">
-                <section class="hero-corp-catering">
-                    <div class="hero-corp-catering__container container">
-                        <div class="hero-corp-catering__bg-wrap">
-                            <img
-                                src="img/hero/34bf24d13d2f679e84ebff3d0e2d36be.webp"
-                                alt=""
-                                class="hero-corp-catering__bg"
-                            />
-                        </div>
-                        <div class="hero-corp-catering__content">
-                            <div class="hero-corp-catering__title-wrap">
-                                <span class="hero-corp-catering__title">Корпоративное питание</span>
-                            </div>
-                            <p class="hero-corp-catering__text">
-                                Эффективное решение для вашего бизнеса. Мы предлагаем сбалансированное меню
-                                для сотрудников и высокое качество обслуживания.
-                            </p>
-                            <button
-                                data-modal="#applicationModal"
-                                type="button"
-                                class="hero-corp-catering__btn btn"
-                            >
-                                <span class="btn__text">Оставить заявку</span>
-                            </button>
-                        </div>
-                        <div class="hero-corp-catering__image-wrap">
-                            <img
-                                src="img/hero/71a5ec7bfdfbb9445d9cb6fa0f0a7843451257b2.webp"
-                                alt=""
-                                class="hero-corp-catering__image"
-                            />
-                        </div>
-                    </div>
-                </section>
-                <section class="order-banner">
-                    <div class="order-banner__container container">
-                        <div class="order-banner__image-wrap">
-                            <img
-                                src="img/bg/63b7aa081644b721e6f61fb8a0624be5.webp"
-                                alt=""
-                                class="order-banner__image"
-                            />
-                        </div>
-                        <div class="order-banner__content">
-                            <span class="order-banner__title">Закажите пробный обед</span>
-                            <p class="order-banner__text">
-                                Устройте дегустацию наших блюд, чтобы убедиться в их качестве - привезем обеды
-                                от 1 шт для пробы с бесплатной доставкой
-                            </p>
-                            <form data-dev action="#" class="order-banner__form">
-                                <div class="order-banner__input input">
-                                    <input
-                                        data-validate
-                                        data-required
-                                        data-phone-mask
-                                        autocomplete="off"
-                                        type="tel"
-                                        name="form[]"
-                                        data-error="Заполните поле"
-                                        placeholder="Телефон"
-                                        class="input__field"
-                                    />
-                                </div>
-                                <button type="submit" class="order-banner__btn btn">
-                                    <span class="btn__text">Заказать</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+<body style="opacity: 0">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<a href="#" class="header__logo logo-header"><img src="img/logo.svg" alt="" class="logo-header__image" /></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__hamburger hamburger">
+						<span></span>
+					</button>
+					<div class="menu__body">
+						<div class="menu__inner">
+							<nav class="menu__nav">
+								<a href="#" class="menu__link"><span class="menu__link-txt bold">Корпоративное питание</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Доставка</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Контакты</span></a>
+							</nav>
+							<div class="menu__footer"></div>
+							<span class="menu__ellipse ellipse"></span>
+						</div>
+					</div>
+				</div>
+				<a href="tel:74991362923" class="header__call-icon call-icon-header"><img src="img/icons/call.svg" alt="" class="call-icon-header__image" /></a>
+				<div data-da=".menu__footer,768,first" class="header__call call-header">
+					<a href="tel:74991362923" class="call-header__link"><span class="call-header__link-txt">+7 (499) 136 29 23</span></a>
+					<span class="call-header__text">с 9:00 до 21:00</span>
+				</div>
+				<button data-modal="#applicationModal" data-da=".menu__footer,768,last" type="button" class="header__btn btn">
+					<span class="btn__text">Оставить заявку</span>
+				</button>
+			</div>
+		</header>
 
-                <section class="features">
-                    <div class="features__container container">
-                        <div class="features__bg">
-                            <div class="features__image-wrap">
-                                <img
-                                    src="img/bg/9e4f446747e269a184068476d2464a97.webp"
-                                    alt=""
-                                    class="features__image"
-                                />
-                            </div>
-                        </div>
-                        <div class="features__content">
-                            <ul class="features__list">
-                                <li class="features__item">
-                                    <span class="features__head">
-                                        <span class="features__num">01</span>
-                                        <span class="features__subtitle">Свежие продукты</span>
-                                    </span>
-                                    <p class="features__text">
-                                        При выборе услуги организации питания важно учесть не только стоимость
-                                        услуг, но и их качество. Наши преимущества - это гарантия свежести
-                                        продуктов, профессиональное приготовление и оперативная доставка.
-                                    </p>
-                                </li>
-                                <li class="features__item">
-                                    <span class="features__head">
-                                        <span class="features__num">02</span>
-                                        <span class="features__subtitle">Качество</span>
-                                    </span>
-                                    <p class="features__text">
-                                        Мы гордимся тем, что предлагаем только высококачественные и свежие
-                                        продукты. Наша цель - удовлетворить потребности даже самых
-                                        требовательных сотрудников.
-                                    </p>
-                                </li>
-                                <li class="features__item">
-                                    <span class="features__head">
-                                        <span class="features__num">03</span>
-                                        <span class="features__subtitle">Быстрая доставка</span>
-                                    </span>
-                                    <p class="features__text">
-                                        Мы стремимся обеспечить максимальное удобство и эффективность для
-                                        наших клиентов. Быстрая доставка и гибкость наших услуг обеспечивают
-                                        вашим сотрудникам здоровое и вкусное питание без отвлечения от работы.
-                                    </p>
-                                </li>
-                                <li class="features__item">
-                                    <span class="features__head">
-                                        <span class="features__num">04</span>
-                                        <span class="features__subtitle">Безопасность</span>
-                                    </span>
-                                    <p class="features__text">
-                                        Безопасность пищевых продуктов для нас имеет первостепенное значение.
-                                        Мы строго следим за соблюдением всех санитарных норм и стандартов.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="seo">
-                    <div class="container">
-                        <h2 class="seo__title section-title">Сео текст</h2>
+		<main class="main corp-catering-page">
+			<section class="hero-corp-catering">
+				<div class="hero-corp-catering__container container">
+					<div class="hero-corp-catering__bg-wrap">
+						<img src="img/hero/34bf24d13d2f679e84ebff3d0e2d36be.webp" alt="" class="hero-corp-catering__bg" />
+					</div>
+					<div class="hero-corp-catering__content">
+						<div class="hero-corp-catering__title-wrap">
+							<span class="hero-corp-catering__title">Корпоративное питание</span>
+						</div>
+						<p class="hero-corp-catering__text">
+							Эффективное решение для вашего бизнеса. Мы предлагаем сбалансированное меню для сотрудников и
+							высокое качество обслуживания.
+						</p>
+						<button data-modal="#applicationModal" type="button" class="hero-corp-catering__btn btn">
+							<span class="btn__text">Оставить заявку</span>
+						</button>
+					</div>
+					<div class="hero-corp-catering__image-wrap">
+						<img src="img/hero/71a5ec7bfdfbb9445d9cb6fa0f0a7843451257b2.webp" alt="" class="hero-corp-catering__image" />
+					</div>
+				</div>
+			</section>
+			<section class="service-info">
+				<div class="service-info__container container">
+					<div class="service-info__content service-info__content_group">
+						<div class="service-info__head">
+							<span class="service-info__title">Организация питания</span>
+							<p class="service-info__text">
+								*Комплексный обед включает в себя один салат, один суп, одно горячее, один гарнир на
+								выбор.
+							</p>
+						</div>
+						<div class="service-info__body">
+							<div class="service-info__group">
+								<span class="service-info__group-heading">Качество</span>
+								<p class="service-info__group-text">
+									Для приготовления используются свежие продукты. Мы готовим в день поставки
+									ингредиентов
+								</p>
+							</div>
+							<div class="service-info__group">
+								<span class="service-info__group-heading">Безопасность</span>
+								<p class="service-info__group-text">
+									Еду привозят ежедневно в индивидуальных контейнерах с набором столовых приборов.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="service-info__content">
+						<span class="service-info__title">Об услуге</span>
+						<div class="service-info__text-wrap">
+							<p class="service-info__text">
+								Мы предлагаем услуги по организации питания сотрудников, которые включают в себя
+								разработку и приготовление питательных и вкусных обедов, а также доставку готовых блюд
+								прямо на рабочие места. Кроме того, мы предлагаем различные программы питания, включая
+								специальные диетические меню, при необходимости.
+							</p>
+							<p class="service-info__text">
+								Такой вид организации общественного питания дает возможность работникам в привычной для
+								них обстановке насладиться обедом. Не придется искать ближайшие кафе или столовые, есть на
+								ходу и бояться опоздать.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        <div class="seo__content">
-                            <div class="seo__text desktop">
-                                <div class="seo__text-block">
-                                    <p>
-                                        Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                        кейтеринга.
-                                        <br />
-                                        Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                        воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                        является ли ваше мероприятие интимной встречей, корпоративным банкетом
-                                        или свадьбой мечты, наш кейтеринг стремится привнести изысканность
-                                        и вкус в каждую деталь. Дарите своим гостям неповторимый опыт с нашими
-                                        выдающимися услугами кейтеринга. Мы воплощаем искусство кулинарии,
-                                        создавая блюда, которые поражают воображение и завоёвывают восхищённые
-                                        взгляды. Независимо от того, является ли ваше мероприятие интимной
-                                        встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг
-                                        стремится привнести изысканность и вкус в каждую деталь.
-                                    </p>
+			<section class="menu-offers">
+				<div class="menu-offers__container container">
+					<div class="menu-offers__head">
+						<span class="menu-offers__title">Наши предложения</span>
+						<p class="menu-offers__text">Вы всегда можете поменять состав обеда на ваш вкус</p>
+					</div>
+					<div class="menu-offers__body">
+						<div data-accordion="768,max" class="menu-offers__menu-offers">
+							<div class="menu-offers__menu-offer menu-offer">
+								<div class="menu-offer__content">
+									<span class="menu-offer__title">Обед сытный</span>
+									<div class="menu-offer__accordion-item accordion-item">
+										<button type="button" data-accordion-item class="accordion-item__title">
+											<span class="accordion-item__title-txt">Показать состав</span><span class="accordion-item__title-txt _hide">Скрыть состав</span>
+											<div class="accordion-item__arr-btn arr-btn">
+												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
+											</div>
+										</button>
+										<div class="accordion-item__body">
+											<div class="accordion-item__inner">
+												<div class="accordion-item__menu-list-wrap">
+													<span class="menu-offer__subtitle">Состав на выбор:</span>
+													<div class="accordion-item__menu-list menu-list">
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Супы</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Бульон куриный с лапшой</li>
+																<li class="menu-list__item">Рассольник</li>
+																<li class="menu-list__item">Суп "Минестроне"</li>
+																<li class="menu-list__item">Суп "Свекольник"</li>
+																<li class="menu-list__item">Суп "Фасолевый"</li>
+																<li class="menu-list__item">Солянка</li>
+																<li class="menu-list__item">Овощной с курицей</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Салаты</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Витаминный</li>
+																<li class="menu-list__item">
+																	Свекла с маринованым огурцом
+																</li>
+																<li class="menu-list__item">Салат "Шотландский"</li>
+																<li class="menu-list__item">Винегрет</li>
+																<li class="menu-list__item">Салат “Столичный”</li>
+																<li class="menu-list__item">
+																	Салат из капусты "Коул Слоу"
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Гарнир</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Греча отварная</li>
+																<li class="menu-list__item">Макароны</li>
+																<li class="menu-list__item">Рис отварной</li>
+																<li class="menu-list__item">Пюре картофельное</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Горячее</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Биточек куриный на пару</li>
+																<li class="menu-list__item">
+																	Свинина тушеная по-испански
+																</li>
+																<li class="menu-list__item">
+																	Голубцы ленивыесо сметаной
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Выпечка</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Ватрушка с творог</li>
+																<li class="menu-list__item">Булочка с корицей</li>
+																<li class="menu-list__item">Сосиска в тесте</li>
+																<li class="menu-list__item">Булочка с маком</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menu-offer__carousel">
+									<div class="menu-offer__slider swiper">
+										<div class="menu-offer__wrapper swiper-wrapper">
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/b2705b516d60070084186d1643d58567.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/b2705b516d60070084186d1643d58567.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/b2705b516d60070084186d1643d58567.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu-offer__navigation swiper-navigation sl-nav">
+										<button type="button" class="swiper-button-prev menu-offer__button-prev">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
+											</svg>
+										</button>
+										<span class="menu-offer__fraction"></span>
+										<button type="button" class="swiper-button-next menu-offer__button-next">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
+											</svg>
+										</button>
+									</div>
+									<div class="menu-offer__info info-menu-offer">
+										<div class="info-menu-offer__price"><span>550 ₽</span>/ порция</div>
+										<span class="info-menu-offer__text">Заказ от 10 порций</span>
+									</div>
+									<a href="#" class="menu-offer__btn btn"><span class="btn__text">Выбрать блюда</span></a>
+								</div>
+							</div>
+							<div class="menu-offers__menu-offer menu-offer">
+								<div class="menu-offer__content">
+									<span class="menu-offer__title">Обед стандартный</span>
+									<div class="menu-offer__accordion-item accordion-item">
+										<button type="button" data-accordion-item class="accordion-item__title">
+											<span class="accordion-item__title-txt">Показать состав</span><span class="accordion-item__title-txt _hide">Скрыть состав</span>
+											<div class="accordion-item__arr-btn arr-btn">
+												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
+											</div>
+										</button>
+										<div class="accordion-item__body">
+											<div class="accordion-item__inner">
+												<div class="accordion-item__menu-list-wrap">
+													<span class="menu-offer__subtitle">Состав на выбор:</span>
+													<div class="accordion-item__menu-list menu-list">
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Супы</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Бульон куриный с лапшой</li>
+																<li class="menu-list__item">Рассольник</li>
+																<li class="menu-list__item">Суп "Минестроне"</li>
+																<li class="menu-list__item">Суп "Свекольник"</li>
+																<li class="menu-list__item">Суп "Фасолевый"</li>
+																<li class="menu-list__item">Солянка</li>
+																<li class="menu-list__item">Овощной с курицей</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Салаты</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Витаминный</li>
+																<li class="menu-list__item">
+																	Свекла с маринованым огурцом
+																</li>
+																<li class="menu-list__item">Салат "Шотландский"</li>
+																<li class="menu-list__item">Винегрет</li>
+																<li class="menu-list__item">Салат “Столичный”</li>
+																<li class="menu-list__item">
+																	Салат из капусты "Коул Слоу"
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Гарнир</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Греча отварная</li>
+																<li class="menu-list__item">Макароны</li>
+																<li class="menu-list__item">Рис отварной</li>
+																<li class="menu-list__item">Пюре картофельное</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Горячее</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Биточек куриный на пару</li>
+																<li class="menu-list__item">
+																	Свинина тушеная по-испански
+																</li>
+																<li class="menu-list__item">
+																	Голубцы ленивыесо сметаной
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Выпечка</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Ватрушка с творог</li>
+																<li class="menu-list__item">Булочка с корицей</li>
+																<li class="menu-list__item">Сосиска в тесте</li>
+																<li class="menu-list__item">Булочка с маком</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menu-offer__carousel">
+									<div class="menu-offer__slider swiper">
+										<div class="menu-offer__wrapper swiper-wrapper">
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/2daae8d414afe82ac205e57c93f2cd36.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/2daae8d414afe82ac205e57c93f2cd36.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/2daae8d414afe82ac205e57c93f2cd36.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu-offer__navigation swiper-navigation sl-nav">
+										<button type="button" class="swiper-button-prev menu-offer__button-prev">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
+											</svg>
+										</button>
+										<span class="menu-offer__fraction"></span>
+										<button type="button" class="swiper-button-next menu-offer__button-next">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
+											</svg>
+										</button>
+									</div>
+									<div class="menu-offer__info info-menu-offer">
+										<div class="info-menu-offer__price"><span>550 ₽</span>/ порция</div>
+										<span class="info-menu-offer__text">Заказ от 10 порций</span>
+									</div>
+									<a href="#" class="menu-offer__btn btn"><span class="btn__text">Выбрать блюда</span></a>
+								</div>
+							</div>
+							<div class="menu-offers__menu-offer menu-offer">
+								<div class="menu-offer__content">
+									<span class="menu-offer__title">Обед базовый</span>
+									<div class="menu-offer__accordion-item accordion-item">
+										<button type="button" data-accordion-item class="accordion-item__title">
+											<span class="accordion-item__title-txt">Показать состав</span><span class="accordion-item__title-txt _hide">Скрыть состав</span>
+											<div class="accordion-item__arr-btn arr-btn">
+												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
+											</div>
+										</button>
+										<div class="accordion-item__body">
+											<div class="accordion-item__inner">
+												<div class="accordion-item__menu-list-wrap">
+													<span class="menu-offer__subtitle">Состав на выбор:</span>
+													<div class="accordion-item__menu-list menu-list">
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Супы</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Бульон куриный с лапшой</li>
+																<li class="menu-list__item">Рассольник</li>
+																<li class="menu-list__item">Суп "Минестроне"</li>
+																<li class="menu-list__item">Суп "Свекольник"</li>
+																<li class="menu-list__item">Суп "Фасолевый"</li>
+																<li class="menu-list__item">Солянка</li>
+																<li class="menu-list__item">Овощной с курицей</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Салаты</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Витаминный</li>
+																<li class="menu-list__item">
+																	Свекла с маринованым огурцом
+																</li>
+																<li class="menu-list__item">Салат "Шотландский"</li>
+																<li class="menu-list__item">Винегрет</li>
+																<li class="menu-list__item">Салат “Столичный”</li>
+																<li class="menu-list__item">
+																	Салат из капусты "Коул Слоу"
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Гарнир</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Греча отварная</li>
+																<li class="menu-list__item">Макароны</li>
+																<li class="menu-list__item">Рис отварной</li>
+																<li class="menu-list__item">Пюре картофельное</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Горячее</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Биточек куриный на пару</li>
+																<li class="menu-list__item">
+																	Свинина тушеная по-испански
+																</li>
+																<li class="menu-list__item">
+																	Голубцы ленивыесо сметаной
+																</li>
+															</ul>
+														</div>
+														<div class="menu-list__group">
+															<span class="menu-list__subtitle">Выпечка</span>
+															<ul class="menu-list__list">
+																<li class="menu-list__item">Ватрушка с творог</li>
+																<li class="menu-list__item">Булочка с корицей</li>
+																<li class="menu-list__item">Сосиска в тесте</li>
+																<li class="menu-list__item">Булочка с маком</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menu-offer__carousel">
+									<div class="menu-offer__slider swiper">
+										<div class="menu-offer__wrapper swiper-wrapper">
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/85c4a7251a02ec026bcf48a425e41609.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/85c4a7251a02ec026bcf48a425e41609.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+											<div class="menu-offer__slide slide-menu-offer swiper-slide">
+												<div class="slide-menu-offer__image-wrap">
+													<img src="img/offers/85c4a7251a02ec026bcf48a425e41609.webp" alt="" class="slide-menu-offer__image" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu-offer__navigation swiper-navigation sl-nav">
+										<button type="button" class="swiper-button-prev menu-offer__button-prev">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
+											</svg>
+										</button>
+										<span class="menu-offer__fraction"></span>
+										<button type="button" class="swiper-button-next menu-offer__button-next">
+											<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
+											</svg>
+										</button>
+									</div>
+									<div class="menu-offer__info info-menu-offer">
+										<div class="info-menu-offer__price"><span>550 ₽</span>/ порция</div>
+										<span class="info-menu-offer__text">Заказ от 10 порций</span>
+									</div>
+									<a href="#" class="menu-offer__btn btn"><span class="btn__text">Выбрать блюда</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order-banner">
+				<div class="order-banner__container container">
+					<div class="order-banner__image-wrap">
+						<img src="img/bg/63b7aa081644b721e6f61fb8a0624be5.webp" alt="" class="order-banner__image" />
+					</div>
+					<div class="order-banner__content">
+						<span class="order-banner__title">Закажите пробный обед</span>
+						<p class="order-banner__text">
+							Устройте дегустацию наших блюд, чтобы убедиться в их качестве - привезем обеды от 1 шт для
+							пробы с бесплатной доставкой
+						</p>
+						<form data-dev action="#" class="order-banner__form">
+							<div class="order-banner__input input">
+								<input data-validate data-required data-phone-mask autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
+							</div>
+							<button type="submit" class="order-banner__btn btn">
+								<span class="btn__text">Заказать</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
 
-                                    <p>
-                                        Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                        кейтеринга. Мы воплощаем искусство кулинарии, создавая блюда, которые
-                                        поражают воображение и завоёвывают восхищённые взгляды. Независимо
-                                        от того, является ли ваше мероприятие интимной встречей, корпоративным
-                                        банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                        изысканность и вкус в каждую деталь.
-                                    </p>
-                                </div>
+			<section class="features">
+				<div class="features__container container">
+					<div class="features__bg">
+						<div class="features__image-wrap">
+							<img src="img/bg/9e4f446747e269a184068476d2464a97.webp" alt="" class="features__image" />
+						</div>
+					</div>
+					<div class="features__content">
+						<ul class="features__list">
+							<li class="features__item">
+								<span class="features__head">
+									<span class="features__num">01</span>
+									<span class="features__subtitle">Свежие продукты</span>
+								</span>
+								<p class="features__text">
+									При выборе услуги организации питания важно учесть не только стоимость услуг, но и их
+									качество. Наши преимущества - это гарантия свежести продуктов, профессиональное
+									приготовление и оперативная доставка.
+								</p>
+							</li>
+							<li class="features__item">
+								<span class="features__head">
+									<span class="features__num">02</span>
+									<span class="features__subtitle">Качество</span>
+								</span>
+								<p class="features__text">
+									Мы гордимся тем, что предлагаем только высококачественные и свежие продукты. Наша цель
+									- удовлетворить потребности даже самых требовательных сотрудников.
+								</p>
+							</li>
+							<li class="features__item">
+								<span class="features__head">
+									<span class="features__num">03</span>
+									<span class="features__subtitle">Быстрая доставка</span>
+								</span>
+								<p class="features__text">
+									Мы стремимся обеспечить максимальное удобство и эффективность для наших клиентов.
+									Быстрая доставка и гибкость наших услуг обеспечивают вашим сотрудникам здоровое и
+									вкусное питание без отвлечения от работы.
+								</p>
+							</li>
+							<li class="features__item">
+								<span class="features__head">
+									<span class="features__num">04</span>
+									<span class="features__subtitle">Безопасность</span>
+								</span>
+								<p class="features__text">
+									Безопасность пищевых продуктов для нас имеет первостепенное значение. Мы строго следим
+									за соблюдением всех санитарных норм и стандартов.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="seo">
+				<div class="container">
+					<h2 class="seo__title section-title">Сео текст</h2>
 
-                                <p>
-                                    Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                    кейтеринга. Мы воплощаем искусство кулинарии, создавая блюда, которые
-                                    поражают воображение и завоёвывают восхищённые взгляды. Независимо
-                                    от того, является ли ваше мероприятие интимной встречей, корпоративным
-                                    банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                    изысканность и вкус в каждую деталь.
-                                </p>
+					<div class="seo__content">
+						<div class="seo__text desktop">
+							<div class="seo__text-block">
+								<p>
+									Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+									<br />
+									Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+									и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+									интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+									привнести изысканность и вкус в каждую деталь. Дарите своим гостям неповторимый опыт
+									с нашими выдающимися услугами кейтеринга. Мы воплощаем искусство кулинарии, создавая
+									блюда, которые поражают воображение и завоёвывают восхищённые взгляды. Независимо
+									от того, является ли ваше мероприятие интимной встречей, корпоративным банкетом
+									или свадьбой мечты, наш кейтеринг стремится привнести изысканность и вкус в каждую
+									деталь.
+								</p>
 
-                                <div class="seo__text-block">
-                                    <p>
-                                        Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                        кейтеринга.
-                                        <br />
-                                        Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                        воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                        является ли ваше мероприятие интимной встречей, корпоративным банкетом
-                                        или свадьбой мечты, наш кейтеринг стремится привнести изысканность
-                                        и вкус в каждую деталь. Дарите своим гостям неповторимый опыт с нашими
-                                        выдающимися услугами кейтеринга. Мы воплощаем искусство кулинарии,
-                                        создавая блюда, которые поражают воображение и завоёвывают восхищённые
-                                        взгляды. Независимо от того, является ли ваше мероприятие интимной
-                                        встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг
-                                        стремится привнести изысканность и вкус в каждую деталь.
-                                    </p>
+								<p>
+									Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+									Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+									и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+									интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+									привнести изысканность и вкус в каждую деталь.
+								</p>
+							</div>
 
-                                    <p>
-                                        Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                        кейтеринга. Мы воплощаем искусство кулинарии, создавая блюда, которые
-                                        поражают воображение и завоёвывают восхищённые взгляды. Независимо
-                                        от того, является ли ваше мероприятие интимной встречей, корпоративным
-                                        банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                        изысканность и вкус в каждую деталь.
-                                    </p>
-                                </div>
-                            </div>
+							<p>
+								Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+								Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+								и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+								интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+								привнести изысканность и вкус в каждую деталь.
+							</p>
 
-                            <div data-showmore class="mobile">
-                                <div class="seo__text" data-showmore-content="250">
-                                    <div class="seo__text-block">
-                                        <p>
-                                            Дарите своим гостям неповторимый опыт с нашими выдающимися
-                                            услугами кейтеринга.
-                                            <br />
-                                            Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                            воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                            является ли ваше мероприятие интимной встречей, корпоративным
-                                            банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                            изысканность и вкус в каждую деталь. Дарите своим гостям
-                                            неповторимый опыт с нашими выдающимися услугами кейтеринга.
-                                            Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                            воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                            является ли ваше мероприятие интимной встречей, корпоративным
-                                            банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                            изысканность и вкус в каждую деталь.
-                                        </p>
+							<div class="seo__text-block">
+								<p>
+									Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+									<br />
+									Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+									и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+									интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+									привнести изысканность и вкус в каждую деталь. Дарите своим гостям неповторимый опыт
+									с нашими выдающимися услугами кейтеринга. Мы воплощаем искусство кулинарии, создавая
+									блюда, которые поражают воображение и завоёвывают восхищённые взгляды. Независимо
+									от того, является ли ваше мероприятие интимной встречей, корпоративным банкетом
+									или свадьбой мечты, наш кейтеринг стремится привнести изысканность и вкус в каждую
+									деталь.
+								</p>
 
-                                        <p>
-                                            Дарите своим гостям неповторимый опыт с нашими выдающимися
-                                            услугами кейтеринга. Мы воплощаем искусство кулинарии, создавая
-                                            блюда, которые поражают воображение и завоёвывают восхищённые
-                                            взгляды. Независимо от того, является ли ваше мероприятие интимной
-                                            встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг
-                                            стремится привнести изысканность и вкус в каждую деталь.
-                                        </p>
-                                    </div>
+								<p>
+									Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+									Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+									и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+									интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+									привнести изысканность и вкус в каждую деталь.
+								</p>
+							</div>
+						</div>
 
-                                    <p>
-                                        Дарите своим гостям неповторимый опыт с нашими выдающимися услугами
-                                        кейтеринга. Мы воплощаем искусство кулинарии, создавая блюда, которые
-                                        поражают воображение и завоёвывают восхищённые взгляды. Независимо
-                                        от того, является ли ваше мероприятие интимной встречей, корпоративным
-                                        банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                        изысканность и вкус в каждую деталь.
-                                    </p>
+						<div data-showmore class="mobile">
+							<div class="seo__text" data-showmore-content="250">
+								<div class="seo__text-block">
+									<p>
+										Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										<br />
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь. Дарите
+										своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь.
+									</p>
 
-                                    <div class="seo__text-block">
-                                        <p>
-                                            Дарите своим гостям неповторимый опыт с нашими выдающимися
-                                            услугами кейтеринга.
-                                            <br />
-                                            Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                            воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                            является ли ваше мероприятие интимной встречей, корпоративным
-                                            банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                            изысканность и вкус в каждую деталь. Дарите своим гостям
-                                            неповторимый опыт с нашими выдающимися услугами кейтеринга.
-                                            Мы воплощаем искусство кулинарии, создавая блюда, которые поражают
-                                            воображение и завоёвывают восхищённые взгляды. Независимо от того,
-                                            является ли ваше мероприятие интимной встречей, корпоративным
-                                            банкетом или свадьбой мечты, наш кейтеринг стремится привнести
-                                            изысканность и вкус в каждую деталь.
-                                        </p>
+									<p>
+										Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь.
+									</p>
+								</div>
 
-                                        <p>
-                                            Дарите своим гостям неповторимый опыт с нашими выдающимися
-                                            услугами кейтеринга. Мы воплощаем искусство кулинарии, создавая
-                                            блюда, которые поражают воображение и завоёвывают восхищённые
-                                            взгляды. Независимо от того, является ли ваше мероприятие интимной
-                                            встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг
-                                            стремится привнести изысканность и вкус в каждую деталь.
-                                        </p>
-                                    </div>
-                                </div>
-                                <button
-                                    hidden
-                                    data-showmore-button
-                                    type="button"
-                                    class="showmore-button mobile"
-                                >
-                                    <span
-                                        >Читать полностью
-                                        <svg
-                                            width="16"
-                                            height="24"
-                                            viewBox="0 0 16 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M7.29289 23.2071C7.68342 23.5976 8.31658 23.5976 8.70711 23.2071L15.0711 16.8431C15.4616 16.4526 15.4616 15.8195 15.0711 15.4289C14.6805 15.0384 14.0474 15.0384 13.6569 15.4289L8 21.0858L2.34315 15.4289C1.95262 15.0384 1.31946 15.0384 0.928932 15.4289C0.538407 15.8195 0.538407 16.4526 0.928931 16.8431L7.29289 23.2071ZM7 0.5L7 22.5L9 22.5L9 0.5L7 0.5Z"
-                                                fill="#1D1D1D"
-                                            />
-                                        </svg>
-                                    </span>
-                                    <span
-                                        >Скрыть
-                                        <svg
-                                            width="16"
-                                            height="24"
-                                            viewBox="0 0 16 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M7.29289 23.2071C7.68342 23.5976 8.31658 23.5976 8.70711 23.2071L15.0711 16.8431C15.4616 16.4526 15.4616 15.8195 15.0711 15.4289C14.6805 15.0384 14.0474 15.0384 13.6569 15.4289L8 21.0858L2.34315 15.4289C1.95262 15.0384 1.31946 15.0384 0.928932 15.4289C0.538407 15.8195 0.538407 16.4526 0.928931 16.8431L7.29289 23.2071ZM7 0.5L7 22.5L9 22.5L9 0.5L7 0.5Z"
-                                                fill="#1D1D1D"
-                                            /></svg
-                                    ></span>
-                                </button>
-                            </div>
+								<p>
+									Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+									Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+									и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше мероприятие
+									интимной встречей, корпоративным банкетом или свадьбой мечты, наш кейтеринг стремится
+									привнести изысканность и вкус в каждую деталь.
+								</p>
 
-                            <aside class="seo__sidebar">
-                                <div class="seo__sidebar-block">
-                                    <ul class="seo__sidebar-blocks">
-                                        <li>
-                                            <span class="seo__sidebar-block-title"> 5000 &#8381; </span>
+								<div class="seo__text-block">
+									<p>
+										Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										<br />
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь. Дарите
+										своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь.
+									</p>
 
-                                            <p class="seo__sidebar-block-subtitle">минимальный заказ</p>
-                                        </li>
+									<p>
+										Дарите своим гостям неповторимый опыт с нашими выдающимися услугами кейтеринга.
+										Мы воплощаем искусство кулинарии, создавая блюда, которые поражают воображение
+										и завоёвывают восхищённые взгляды. Независимо от того, является ли ваше
+										мероприятие интимной встречей, корпоративным банкетом или свадьбой мечты,
+										наш кейтеринг стремится привнести изысканность и вкус в каждую деталь.
+									</p>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="showmore-button mobile">
+								<span>Читать полностью
+									<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.29289 23.2071C7.68342 23.5976 8.31658 23.5976 8.70711 23.2071L15.0711 16.8431C15.4616 16.4526 15.4616 15.8195 15.0711 15.4289C14.6805 15.0384 14.0474 15.0384 13.6569 15.4289L8 21.0858L2.34315 15.4289C1.95262 15.0384 1.31946 15.0384 0.928932 15.4289C0.538407 15.8195 0.538407 16.4526 0.928931 16.8431L7.29289 23.2071ZM7 0.5L7 22.5L9 22.5L9 0.5L7 0.5Z" fill="#1D1D1D" />
+									</svg>
+								</span>
+								<span>Скрыть
+									<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.29289 23.2071C7.68342 23.5976 8.31658 23.5976 8.70711 23.2071L15.0711 16.8431C15.4616 16.4526 15.4616 15.8195 15.0711 15.4289C14.6805 15.0384 14.0474 15.0384 13.6569 15.4289L8 21.0858L2.34315 15.4289C1.95262 15.0384 1.31946 15.0384 0.928932 15.4289C0.538407 15.8195 0.538407 16.4526 0.928931 16.8431L7.29289 23.2071ZM7 0.5L7 22.5L9 22.5L9 0.5L7 0.5Z" fill="#1D1D1D" />
+									</svg></span>
+							</button>
+						</div>
 
-                                        <li>
-                                            <span class="seo__sidebar-block-title">1000+</span>
+						<aside class="seo__sidebar">
+							<div class="seo__sidebar-block">
+								<ul class="seo__sidebar-blocks">
+									<li>
+										<span class="seo__sidebar-block-title"> 5000 <span class="rub">₽</span></span>
 
-                                            <p class="seo__sidebar-block-subtitle">довольных клиентов</p>
-                                        </li>
-                                    </ul>
-                                </div>
+										<p class="seo__sidebar-block-subtitle">минимальный заказ</p>
+									</li>
 
-                                <div class="seo__sidebar-block">
-                                    <ul class="seo__sidebar-blocks">
-                                        <li>
-                                            <span class="seo__sidebar-block-title">5</span>
+									<li>
+										<span class="seo__sidebar-block-title">1000+</span>
 
-                                            <p class="seo__sidebar-block-subtitle">лет опыта</p>
-                                        </li>
+										<p class="seo__sidebar-block-subtitle">довольных клиентов</p>
+									</li>
+								</ul>
+							</div>
 
-                                        <li>
-                                            <span class="seo__sidebar-block-title">80+</span>
+							<div class="seo__sidebar-block">
+								<ul class="seo__sidebar-blocks">
+									<li>
+										<span class="seo__sidebar-block-title">5</span>
 
-                                            <p class="seo__sidebar-block-subtitle">блюд на выбор</p>
-                                        </li>
-                                    </ul>
-                                </div>
+										<p class="seo__sidebar-block-subtitle">лет опыта</p>
+									</li>
 
-                                <div class="seo__sidebar-eat">
-                                    <img src="img/seo/eat.webp" alt="" />
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </section>
+									<li>
+										<span class="seo__sidebar-block-title">80+</span>
 
-                <section class="benefits">
-                    <div class="container">
-                        <div class="benefits__content">
-                            <h2 class="benefits__title section-title">Наши преимущества</h2>
+										<p class="seo__sidebar-block-subtitle">блюд на выбор</p>
+									</li>
+								</ul>
+							</div>
 
-                            <ul class="benefits__list">
-                                <li class="benefits__item">
-                                    <div class="benefits__item-icon">
-                                        <img src="img/benefits/benefits-item-1.svg" alt="" />
-                                    </div>
+							<div class="seo__sidebar-eat">
+								<img src="img/seo/eat.webp" alt="" />
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
 
-                                    <span class="benefits__item-title"> Разнообразие </span>
+			<section class="order">
+				<div class="container">
+					<div class="order__content">
+						<h2 class="order__title section-title">Как сделать заказ</h2>
 
-                                    <p class="benefits__item-description">
-                                        Предоставляем <span>широкий выбор</span> блюд. Мы
-                                        <span>ежедневно</span> обновляем меню наших обедов, чтобы блюда не
-                                        повторялись. Вы можете сами менять состав обеда на свой вкус
-                                    </p>
-                                </li>
+						<ul class="order__list">
+							<li class="order__item">
+								<div class="order__item-icon">
+									<img src="img/order/order-icon-1.svg" alt="" />
+								</div>
 
-                                <li class="benefits__item --big">
-                                    <div class="benefits__item-image">
-                                        <img src="img/benefits/benefits-item-big-1.webp" alt="" />
-                                    </div>
-                                </li>
+								<p class="order__item-text">Выберите одно из наших предложений</p>
+							</li>
 
-                                <li class="benefits__item">
-                                    <div class="benefits__item-icon">
-                                        <img src="img/benefits/benefits-item-2.svg" alt="" />
-                                    </div>
+							<li class="order__item">
+								<div class="order__item-icon">
+									<img src="img/order/order-icon-2.svg" alt="" />
+								</div>
 
-                                    <span class="benefits__item-title"> Качество </span>
+								<p class="order__item-text">
+									Оставьте заявку на сайте или по телефону
+									<a href="tel:74991362923">+7 (499) 136 29 23</a>
+								</p>
+							</li>
 
-                                    <p class="benefits__item-description">
-                                        Продукты для ваших обедов доставляются к нам на кухню
-                                        <span>в день доставки заказа.</span> Все наши блюда готовятся из
-                                        <span>натуральных</span> и <span>свежих</span> продуктов в день
-                                        доставки заказа
-                                    </p>
-                                </li>
+							<li class="order__item">
+								<div class="order__item-icon">
+									<img src="img/order/order-icon-3.svg" alt="" />
+								</div>
 
-                                <li class="benefits__item">
-                                    <div class="benefits__item-icon">
-                                        <img src="img/benefits/benefits-item-3.svg" alt="" />
-                                    </div>
+								<p class="order__item-text">Согласуйте состав обеда и время доставки</p>
+							</li>
 
-                                    <span class="benefits__item-title"> Политика цен </span>
+							<li class="order__item">
+								<div class="order__item-icon">
+									<img src="img/order/order-icon-4.svg" alt="" />
+								</div>
 
-                                    <p class="benefits__item-description">
-                                        Мы <span>не экономим</span> на продуктах. Корпоративное питание должно
-                                        соответствовать высоким стандартам качества пищи и ее вкуса. Готовим
-                                        из продуктов от
-                                        <span>проверенных поставщиков</span>
-                                    </p>
-                                </li>
+								<p class="order__item-text">Отдохните, пока мы готовим и доставляем ваш заказ</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="request">
+				<div class="container">
+					<div class="request__content">
+						<div class="request__form">
+							<div class="request__form-text">
+								<h2 class="request__title">Оставьте заявку</h2>
 
-                                <li class="benefits__item --big desktop">
-                                    <div class="benefits__item-image">
-                                        <img src="img/benefits/benefits-item-big-2.webp" alt="" />
-                                    </div>
-                                </li>
+								<p class="request__description">
+									Если у Вас есть вопросы, оставьте заявку и наш менеджер свяжется с Вами в ближайшее
+									время.
+								</p>
+							</div>
 
-                                <li class="benefits__item">
-                                    <div class="benefits__item-icon">
-                                        <img src="img/benefits/benefits-item-4.svg" alt="" />
-                                    </div>
+							<form data-dev action="#">
+								<div class="request__input input">
+									<input data-validate data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле" placeholder="Имя" class="input__field" />
+								</div>
+								<div class="request__input input">
+									<input data-phone-mask data-validate data-required autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
+								</div>
 
-                                    <span class="benefits__item-title">Комплексный подход</span>
+								<p class="request__form-copyright">
+									Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+								</p>
 
-                                    <p class="benefits__item-description">
-                                        У нас есть <span>готовые решения</span> для наших заказчиков в
-                                        зависимости от потребностей. Организуем любые форматы столовых, кафе,
-                                        доставки, фуршетов, кейтерингов
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="request">
-                    <div class="container">
-                        <div class="request__content">
-                            <div class="request__form">
-                                <div class="request__form-text">
-                                    <h2 class="request__title">Оставьте заявку</h2>
+								<button type="submit" class="request__btn btn">
+									<span class="btn__text">Отправить</span>
+								</button>
+							</form>
+						</div>
 
-                                    <p class="request__description">
-                                        Если у Вас есть вопросы, оставьте заявку и наш менеджер свяжется с
-                                        Вами в ближайшее время.
-                                    </p>
-                                </div>
+						<div class="request__poster">
+							<img src="img/request/poster.webp" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
 
-                                <form data-dev action="#">
-                                    <div class="request__input input">
-                                        <input
-                                            data-validate
-                                            data-required
-                                            autocomplete="off"
-                                            type="text"
-                                            name="form[]"
-                                            data-error="Заполните поле"
-                                            placeholder="Имя"
-                                            class="input__field"
-                                        />
-                                    </div>
-                                    <div class="request__input input">
-                                        <input
-                                            data-phone-mask
-                                            data-validate
-                                            data-required
-                                            autocomplete="off"
-                                            type="tel"
-                                            name="form[]"
-                                            data-error="Заполните поле"
-                                            placeholder="Телефон"
-                                            class="input__field"
-                                        />
-                                    </div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__main">
+					<div class="footer__group">
+						<a href="#" class="footer__logo logo-footer"><img src="img/logo.svg" alt="" class="logo-footer__image" /></a>
+						<p class="footer__text">
+							Наша главная миссия: сделать вкусную и разнообразную еду на любое
+							предпочтение, попробуй идею на вкус!
+						</p>
+					</div>
+					<nav class="footer__nav nav-footer">
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">Услуги</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">доставка</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">о нас</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">статьи</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">контакты</span></a>
+					</nav>
+				</div>
+				<div class="footer__lower">
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					<ul class="footer__contacts contacts-footer">
+						<li class="contacts-footer__item">
+							<a href="mailto:forexample@.com" class="contacts-footer__link">forexample@.com</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__request-design request-design">
+					<span class="request-design__text">© Все права защищены.</span>
+					<a href="https://requestdesign.ru/" class="request-design__logo"><img src="img/rd-logo.svg" alt="" class="request-design__logo-image" /></a>
+				</div>
+			</div>
+		</footer>
+		<div id="applicationModal" aria-hidden="true" class="modal application-modal">
+			<div class="modal__wrapper">
+				<div class="modal__content">
+					<div class="modal__body">
+						<div class="application-modal__inner">
+							<div class="application-modal__image-wrap">
+								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
+							</div>
+							<div class="application-modal__content">
+								<button data-close type="button" class="application-modal__close">
+									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
+								</button>
+								<span class="application-modal__title">Оставьте заявку</span>
+								<form data-modal-message="#applicationSentModal" data-dev action="#" class="application-modal__form">
+									<div class="application-modal__fields">
+										<div class="application-modal__input input">
+											<input data-validate data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле" placeholder="Имя" class="input__field" />
+										</div>
+										<div class="application-modal__input input">
+											<input data-validate data-required data-phone-mask autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
+										</div>
+									</div>
+									<p class="application-modal__text">
+										Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+									</p>
+									<button type="submit" class="application-modal__btn btn">
+										<span class="btn__text">Отправить</span>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                    <p class="request__form-copyright">
-                                        Нажимая на кнопку “отправить” Вы соглашаетесь на обработку
-                                        персональных данных
-                                    </p>
+		<div id="applicationSentModal" aria-hidden="true" class="modal application-modal application-modal_sent">
+			<div class="modal__wrapper">
+				<div class="modal__content">
+					<div class="modal__body">
+						<div class="application-modal__inner">
+							<div class="application-modal__image-wrap">
+								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
+							</div>
+							<div class="application-modal__content">
+								<button data-close type="button" class="application-modal__close">
+									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
+								</button>
+								<span class="application-modal__title">Ваша заявка отправлена</span>
+								<p class="application-modal__text">
+									Наш менеджер с скоро свяжется с Вами для уточнения деталей!
+								</p>
+								<a href="#" class="application-modal__btn btn">
+									<span class="btn__text">На главную</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                    <button type="submit" class="request__btn btn">
-                                        <span class="btn__text">Отправить</span>
-                                    </button>
-                                </form>
-                            </div>
+	</div>
+	<script src="js/app.js"></script>
 
-                            <div class="request__poster">
-                                <img src="img/request/poster.webp" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="footer__container container">
-                    <div class="footer__main">
-                        <div class="footer__group">
-                            <a href="#" class="footer__logo logo-footer"
-                                ><img src="img/logo.svg" alt="" class="logo-footer__image"
-                            /></a>
-                            <p class="footer__text">
-                                Наша главная миссия: сделать вкусную и разнообразную еду на любое
-                                предпочтение, попробуй идею на вкус!
-                            </p>
-                        </div>
-                        <nav class="footer__nav nav-footer">
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">Услуги</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">доставка</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">о нас</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">статьи</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">контакты</span></a
-                            >
-                        </nav>
-                    </div>
-                    <div class="footer__lower">
-                        <a href="#" class="footer__policy">Политика конфиденциальности</a>
-                        <ul class="footer__contacts contacts-footer">
-                            <li class="contacts-footer__item">
-                                <a href="mailto:forexample@.com" class="contacts-footer__link"
-                                    >forexample@.com</a
-                                >
-                            </li>
-                            <li class="contacts-footer__item">
-                                <a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__request-design request-design">
-                        <span class="request-design__text">© Все права защищены.</span>
-                        <a href="https://requestdesign.ru/" class="request-design__logo"
-                            ><img src="img/rd-logo.svg" alt="" class="request-design__logo-image"
-                        /></a>
-                    </div>
-                </div>
-            </footer>
-            <div id="applicationModal" aria-hidden="true" class="modal application-modal">
-                <div class="modal__wrapper">
-                    <div class="modal__content">
-                        <div class="modal__body">
-                            <div class="application-modal__inner">
-                                <div class="application-modal__image-wrap">
-                                    <img
-                                        src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
-                                        alt=""
-                                        class="application-modal__image"
-                                    />
-                                </div>
-                                <div class="application-modal__content">
-                                    <button data-close type="button" class="application-modal__close">
-                                        <img
-                                            src="img/icons/cross-gray.svg"
-                                            alt=""
-                                            class="application-modal__close-icon"
-                                        />
-                                    </button>
-                                    <span class="application-modal__title">Оставьте заявку</span>
-                                    <form
-                                        data-modal-message="#applicationSentModal"
-                                        data-dev
-                                        action="#"
-                                        class="application-modal__form"
-                                    >
-                                        <div class="application-modal__fields">
-                                            <div class="application-modal__input input">
-                                                <input
-                                                    data-validate
-                                                    data-required
-                                                    autocomplete="off"
-                                                    type="text"
-                                                    name="form[]"
-                                                    data-error="Заполните поле"
-                                                    placeholder="Имя"
-                                                    class="input__field"
-                                                />
-                                            </div>
-                                            <div class="application-modal__input input">
-                                                <input
-                                                    data-validate
-                                                    data-required
-                                                    data-phone-mask
-                                                    autocomplete="off"
-                                                    type="tel"
-                                                    name="form[]"
-                                                    data-error="Заполните поле"
-                                                    placeholder="Телефон"
-                                                    class="input__field"
-                                                />
-                                            </div>
-                                        </div>
-                                        <p class="application-modal__text">
-                                            Нажимая на кнопку “отправить” Вы соглашаетесь на обработку
-                                            персональных данных
-                                        </p>
-                                        <button type="submit" class="application-modal__btn btn">
-                                            <span class="btn__text">Отправить</span>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</body>
 
-            <div
-                id="applicationSentModal"
-                aria-hidden="true"
-                class="modal application-modal application-modal_sent"
-            >
-                <div class="modal__wrapper">
-                    <div class="modal__content">
-                        <div class="modal__body">
-                            <div class="application-modal__inner">
-                                <div class="application-modal__image-wrap">
-                                    <img
-                                        src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
-                                        alt=""
-                                        class="application-modal__image"
-                                    />
-                                </div>
-                                <div class="application-modal__content">
-                                    <button data-close type="button" class="application-modal__close">
-                                        <img
-                                            src="img/icons/cross-gray.svg"
-                                            alt=""
-                                            class="application-modal__close-icon"
-                                        />
-                                    </button>
-                                    <span class="application-modal__title">Ваша заявка отправлена</span>
-                                    <p class="application-modal__text">
-                                        Наш менеджер с скоро свяжется с Вами для уточнения деталей!
-                                    </p>
-                                    <a href="#" class="application-modal__btn btn">
-                                        <span class="btn__text">На главную</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="js/app.js"></script>
-    </body>
 </html>

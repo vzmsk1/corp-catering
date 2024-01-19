@@ -1,6 +1,11 @@
 .order {
     &__title {
         text-align: center;
+        @include small-tablet {
+            .catering-page & {
+                font-size: 6rem;
+            }
+        }
     }
 
     &__list {

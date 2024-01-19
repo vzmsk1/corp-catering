@@ -1,0 +1,132 @@
+.service-info {
+    // .service-info__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .service-info__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        &:not(&_group) {
+            padding: 4rem 2.4rem 7.7rem 2.4rem;
+        }
+        @media (max-width: 48em) {
+            border-radius: 4rem;
+        }
+
+        // .service-info__content_group
+
+        &_group {
+            background-color: $lilac;
+        }
+    }
+
+    // .service-info__head
+
+    &__head {
+        margin-bottom: auto;
+        padding: 4rem 2.5rem 5.5rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 48em) {
+            margin-bottom: 0;
+            padding: 3.2rem 3.2rem 18rem 3.2rem;
+        }
+    }
+
+    // .service-info__title
+
+    &__title {
+        @include h2;
+        margin-bottom: 2.4rem;
+        @media (max-width: 48em) {
+            margin-bottom: 5rem;
+            font-size: 5rem;
+        }
+    }
+
+    // .service-info__text
+
+    &__text {
+        @include text24;
+    }
+
+    // .service-info__body
+
+    &__body {
+        display: flex;
+        @media (max-width: 48em) {
+            flex-direction: column;
+        }
+    }
+
+    // .service-info__group
+
+    &__group {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4rem;
+        background-color: $green-secondary;
+        @media (min-width: 48em) {
+            padding: 2.5rem;
+            min-height: 30rem;
+            border-radius: 2rem;
+        }
+    }
+
+    // .service-info__group-heading
+
+    &__group-heading {
+        @include h3;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+            content: '';
+            flex: 0 0 4.2rem;
+            width: 4.2rem;
+            height: 4.2rem;
+            background-image: url(@img/icons/star.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 48em) {
+            margin-bottom: 6.4rem;
+            &::after {
+                flex: 0 0 6rem;
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+
+    // .service-info__group-text
+
+    &__group-text {
+        @include text20;
+    }
+
+    // .service-info__text-wrap
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        @media (max-width: 48em) {
+            row-gap: 4rem;
+        }
+    }
+}

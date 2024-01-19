@@ -1,4 +1,8 @@
 .article {
+    @include small-tablet {
+        margin-top: 8rem;
+    }
+
     &__content {
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 2rem;

@@ -1,6 +1,7 @@
 .benefits {
     &__title {
         @include small-tablet {
+            font-size: 6rem;
             letter-spacing: 0;
         }
     }

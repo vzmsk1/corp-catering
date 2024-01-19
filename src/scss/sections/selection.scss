@@ -70,6 +70,7 @@
     &__title {
         @include h2 {
             @include small-tablet {
+                font-size: 6rem;
                 line-height: 100%;
             }
         }

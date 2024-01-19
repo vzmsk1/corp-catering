@@ -1,6 +1,6 @@
 .offers {
     @media (max-width: 48em) {
-        margin-bottom: 35rem;
+        margin-bottom: 30rem;
     }
 
     // .offers__container
@@ -261,9 +261,10 @@
         display: flex;
         align-items: flex-end;
         column-gap: 0.4rem;
+        line-height: 1;
         span {
             @include h3;
-            line-height: 100%;
+            line-height: 1;
             color: $orange;
         }
         @media (max-width: 48em) {

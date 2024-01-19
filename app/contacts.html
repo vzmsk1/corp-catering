@@ -1,190 +1,215 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <title>Контакты</title>
-        <meta charset="UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- <style>body{opacity: 0;}</style> -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <!-- <meta name="robots" content="noindex, nofollow"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
 
-    <body style="opacity: 0">
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container container">
-                    <a href="#" class="header__logo logo-header"
-                        ><img src="img/logo.svg" alt="" class="logo-header__image"
-                    /></a>
-                    <div class="header__menu menu">
-                        <button type="button" class="menu__hamburger hamburger">
-                            <span></span>
-                        </button>
-                        <div class="menu__body">
-                            <nav class="menu__nav">
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt bold">Корпоративное питание</span></a
-                                >
-                                <a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt">Доставка</span></a
-                                >
-                                <a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
-                                <a href="#" class="menu__link"
-                                    ><span class="menu__link-txt">Контакты</span></a
-                                >
-                            </nav>
-                            <div class="menu__footer"></div>
-                            <span class="menu__ellipse ellipse"></span>
-                        </div>
-                    </div>
-                    <a href="tel:74991362923" class="header__call-icon call-icon-header"
-                        ><img src="img/icons/call.svg" alt="" class="call-icon-header__image"
-                    /></a>
-                    <div data-da=".menu__footer,768,first" class="header__call call-header">
-                        <a href="tel:74991362923" class="call-header__link"
-                            ><span class="call-header__link-txt">+7 (499) 136 29 23</span></a
-                        >
-                        <span class="call-header__text">с 9:00 до 21:00</span>
-                    </div>
-                    <button
-                        data-modal="#applicationModal"
-                        data-da=".menu__footer,768,last"
-                        type="button"
-                        class="header__btn btn"
-                    >
-                        <span class="btn__text">Оставить заявку</span>
-                    </button>
-                </div>
-            </header>
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-            <main class="main">
-                <section class="contacts">
-                    <div class="container">
-                        <div class="contacts__content">
-                            <div class="contacts__top">
-                                <div class="contacts__info">
-                                    <h1 class="contacts__title section-title">Контакты</h1>
+<body style="opacity: 0">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<a href="#" class="header__logo logo-header"><img src="img/logo.svg" alt="" class="logo-header__image" /></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__hamburger hamburger">
+						<span></span>
+					</button>
+					<div class="menu__body">
+						<div class="menu__inner">
+							<nav class="menu__nav">
+								<a href="#" class="menu__link"><span class="menu__link-txt bold">Корпоративное питание</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Доставка</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
+								<a href="#" class="menu__link"><span class="menu__link-txt">Контакты</span></a>
+							</nav>
+							<div class="menu__footer"></div>
+							<span class="menu__ellipse ellipse"></span>
+						</div>
+					</div>
+				</div>
+				<a href="tel:74991362923" class="header__call-icon call-icon-header"><img src="img/icons/call.svg" alt="" class="call-icon-header__image" /></a>
+				<div data-da=".menu__footer,768,first" class="header__call call-header">
+					<a href="tel:74991362923" class="call-header__link"><span class="call-header__link-txt">+7 (499) 136 29 23</span></a>
+					<span class="call-header__text">с 9:00 до 21:00</span>
+				</div>
+				<button data-modal="#applicationModal" data-da=".menu__footer,768,last" type="button" class="header__btn btn">
+					<span class="btn__text">Оставить заявку</span>
+				</button>
+			</div>
+		</header>
 
-                                    <ul class="contacts__list">
-                                        <li class="contacts__item">
-                                            <span class="contacts__item-title"> Адрес </span>
+		<main class="main contacts-page">
+			<section class="contacts">
+				<div class="container">
+					<div class="contacts__content">
+						<div class="contacts__top">
+							<div class="contacts__info">
+								<h1 class="contacts__title section-title">Контакты</h1>
 
-                                            <address class="contacts__item-contact">
-                                                г. Москва, ул. Тимирязевская, 1
-                                            </address>
-                                        </li>
+								<ul class="contacts__list">
+									<li class="contacts__item">
+										<span class="contacts__item-title"> Адрес </span>
 
-                                        <li class="contacts__item">
-                                            <span class="contacts__item-title"> Телефон </span>
+										<address class="contacts__item-contact">г. Москва, ул. Тимирязевская, 1</address>
+									</li>
 
-                                            <a href="tel:+7(499)1362923" class="contacts__item-contact"
-                                                >+7 (499) 136 29 23</a
-                                            >
-                                            <p class="contacts__item-description">Работаем с 9:00 до 21:00</p>
-                                        </li>
+									<li class="contacts__item">
+										<span class="contacts__item-title"> Телефон </span>
 
-                                        <li class="contacts__item">
-                                            <span class="contacts__item-title"> Почта </span>
+										<a href="tel:+7(499)1362923" class="contacts__item-contact">+7 (499) 136 29 23</a>
+										<p class="contacts__item-description">Работаем с 9:00 до 21:00</p>
+									</li>
 
-                                            <a href="mailto: forexample@.com" class="contacts__item-contact">
-                                                forexample@.com
-                                            </a>
-                                        </li>
-                                    </ul>
+									<li class="contacts__item">
+										<span class="contacts__item-title"> Почта </span>
 
-                                    <button class="contacts__button button-primary">Как добраться</button>
-                                </div>
+										<a href="mailto: forexample@.com" class="contacts__item-contact">
+											forexample@.com
+										</a>
+									</li>
+								</ul>
 
-                                <div class="contacts__map">
-                                    <div id="map"></div>
-                                </div>
-                            </div>
+								<button type="button" class="contacts__button button-primary">Заказать звонок</button>
+							</div>
 
-                            <div class="contacts__bottom">
-                                <h2 class="contacts__bottom-title">Как добраться</h2>
+							<div class="contacts__map">
+								<div id="map"></div>
+							</div>
+						</div>
 
-                                <ul class="contacts__bottom-blocks">
-                                    <li class="contacts__bottom-block">
-                                        <p>
-                                            От метро Дмитровская идите прямо до Дмитровского проезда,
-                                            поверните налево, идите прямо до перекрёстка с Тимерязевской
-                                            улицей.
-                                        </p>
-                                    </li>
+						<div class="contacts__bottom">
+							<h2 class="contacts__bottom-title">Как добраться</h2>
 
-                                    <li class="contacts__bottom-block">
-                                        <p>
-                                            От метро Дмитровская идите прямо до Дмитровского проезда,
-                                            поверните налево, идите прямо до перекрёстка с Тимерязевской
-                                            улицей.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="footer__container container">
-                    <div class="footer__main">
-                        <div class="footer__group">
-                            <a href="#" class="footer__logo logo-footer"
-                                ><img src="img/logo.svg" alt="" class="logo-footer__image"
-                            /></a>
-                            <p class="footer__text">
-                                Наша главная миссия: сделать вкусную и разнообразную еду на любое
-                                предпочтение, попробуй идею на вкус!
-                            </p>
-                        </div>
-                        <nav class="footer__nav nav-footer">
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">Услуги</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">доставка</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">о нас</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">статьи</span></a
-                            >
-                            <a href="#" class="nav-footer__link"
-                                ><span class="nav-footer__link-txt">контакты</span></a
-                            >
-                        </nav>
-                    </div>
-                    <div class="footer__lower">
-                        <a href="#" class="footer__policy">Политика конфиденциальности</a>
-                        <ul class="footer__contacts contacts-footer">
-                            <li class="contacts-footer__item">
-                                <a href="mailto:forexample@.com" class="contacts-footer__link"
-                                    >forexample@.com</a
-                                >
-                            </li>
-                            <li class="contacts-footer__item">
-                                <a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__request-design request-design">
-                        <span class="request-design__text">© Все права защищены.</span>
-                        <a href="https://requestdesign.ru/" class="request-design__logo"
-                            ><img src="img/rd-logo.svg" alt="" class="request-design__logo-image"
-                        /></a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <script src="js/app.js"></script>
+							<ul class="contacts__bottom-blocks">
+								<li class="contacts__bottom-block">
+									<p>
+										От метро Дмитровская идите прямо до Дмитровского проезда, поверните налево, идите
+										прямо до перекрёстка с Тимерязевской улицей.
+									</p>
+								</li>
 
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=2f05284c-b75c-4b38-b0b5-f937b605d568&lang=ru_RU"></script>
-    </body>
+								<li class="contacts__bottom-block">
+									<p>
+										От метро Дмитровская идите прямо до Дмитровского проезда, поверните налево, идите
+										прямо до перекрёстка с Тимерязевской улицей.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__main">
+					<div class="footer__group">
+						<a href="#" class="footer__logo logo-footer"><img src="img/logo.svg" alt="" class="logo-footer__image" /></a>
+						<p class="footer__text">
+							Наша главная миссия: сделать вкусную и разнообразную еду на любое
+							предпочтение, попробуй идею на вкус!
+						</p>
+					</div>
+					<nav class="footer__nav nav-footer">
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">Услуги</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">доставка</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">о нас</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">статьи</span></a>
+						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">контакты</span></a>
+					</nav>
+				</div>
+				<div class="footer__lower">
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					<ul class="footer__contacts contacts-footer">
+						<li class="contacts-footer__item">
+							<a href="mailto:forexample@.com" class="contacts-footer__link">forexample@.com</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__request-design request-design">
+					<span class="request-design__text">© Все права защищены.</span>
+					<a href="https://requestdesign.ru/" class="request-design__logo"><img src="img/rd-logo.svg" alt="" class="request-design__logo-image" /></a>
+				</div>
+			</div>
+		</footer>
+		<div id="applicationModal" aria-hidden="true" class="modal application-modal">
+			<div class="modal__wrapper">
+				<div class="modal__content">
+					<div class="modal__body">
+						<div class="application-modal__inner">
+							<div class="application-modal__image-wrap">
+								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
+							</div>
+							<div class="application-modal__content">
+								<button data-close type="button" class="application-modal__close">
+									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
+								</button>
+								<span class="application-modal__title">Оставьте заявку</span>
+								<form data-modal-message="#applicationSentModal" data-dev action="#" class="application-modal__form">
+									<div class="application-modal__fields">
+										<div class="application-modal__input input">
+											<input data-validate data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле" placeholder="Имя" class="input__field" />
+										</div>
+										<div class="application-modal__input input">
+											<input data-validate data-required data-phone-mask autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
+										</div>
+									</div>
+									<p class="application-modal__text">
+										Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+									</p>
+									<button type="submit" class="application-modal__btn btn">
+										<span class="btn__text">Отправить</span>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="applicationSentModal" aria-hidden="true" class="modal application-modal application-modal_sent">
+			<div class="modal__wrapper">
+				<div class="modal__content">
+					<div class="modal__body">
+						<div class="application-modal__inner">
+							<div class="application-modal__image-wrap">
+								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
+							</div>
+							<div class="application-modal__content">
+								<button data-close type="button" class="application-modal__close">
+									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
+								</button>
+								<span class="application-modal__title">Ваша заявка отправлена</span>
+								<p class="application-modal__text">
+									Наш менеджер с скоро свяжется с Вами для уточнения деталей!
+								</p>
+								<a href="#" class="application-modal__btn btn">
+									<span class="btn__text">На главную</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/app.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2f05284c-b75c-4b38-b0b5-f937b605d568&lang=ru_RU"></script>
+</body>
+
 </html>

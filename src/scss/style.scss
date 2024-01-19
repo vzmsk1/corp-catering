@@ -34,10 +34,12 @@ html.lock body {
 
 // body
 body {
-    overflow-x: hidden;
     background-image: url(@img/bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 48em) {
+        background-image: url(@img/bg-mobile.svg);
+    }
 }
 
 // wrapper
@@ -48,7 +50,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     max-width: 1920px;
-    overflow-x: hidden;
+    @media (max-width: 48em) {
+        overflow-x: hidden;
+    }
 
     // press footer
     > main {
@@ -98,6 +102,7 @@ body {
 @import 'sections/hero-mainpage';
 @import 'sections/hero-catering';
 @import 'sections/hero-corp-catering';
+@import 'sections/hero-about-us';
 @import 'sections/benefits';
 @import 'sections/order';
 @import 'sections/selection';
@@ -121,3 +126,12 @@ body {
 @import 'sections/delivery';
 @import 'sections/payment';
 @import 'sections/working';
+@import 'sections/service-info';
+@import 'sections/menu-offers';
+@import 'sections/numbers';
+@import 'sections/image-text';
+@import 'sections/qualities';
+@import 'sections/quality-banner';
+@import 'sections//documents';
+@import './sections/employees';
+@import './sections/certificates';

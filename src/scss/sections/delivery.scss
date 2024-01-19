@@ -2,7 +2,7 @@
     margin-top: 11.2rem;
 
     @include small-tablet {
-        margin-top: 7.2rem;
+        margin-top: 10rem;
     }
 
     &__content {
@@ -27,7 +27,7 @@
         @include small-tablet {
             left: auto;
             right: 0;
-            top: 0;
+            top: -3rem;
             @include sizes(16.8rem, 16.8rem);
         }
     }
