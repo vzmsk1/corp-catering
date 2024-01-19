@@ -225,4 +225,25 @@ document.addEventListener('DOMContentLoaded', () => {
             certSlider.classList.remove('block');
         });
     }
+
+    const detailedSlides = document.querySelectorAll('.detailed-article-swiper') || [];
+
+    detailedSlides.forEach(
+        () =>
+            new Swiper(
+                '.detailed-article-swiper',
+                initSwiperSettings('detailed', {
+                    spaceBetween: rem(3.2),
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1
+                        },
+
+                        768: {
+                            slidesPerView: 2
+                        }
+                    }
+                })
+            )
+    );
 });

@@ -1,0 +1,216 @@
+.detailed {
+    margin-top: 5.6rem;
+
+    &__content {
+        padding: 5.6rem 13.1rem 13.8rem;
+        border-radius: 2rem;
+        background: rgba(255, 255, 255, 0.7);
+        max-width: 126.8rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @include small-tablet {
+            max-width: 100%;
+            padding: 3.2rem;
+            border-radius: 4rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.6rem;
+        @include h2;
+
+        @include small-tablet {
+            margin-bottom: 4.8rem;
+            @include h2-mobile;
+        }
+    }
+
+    &__time {
+        @include text24;
+        display: block;
+        margin-bottom: 3.2rem;
+
+        @include small-tablet {
+            @include text18;
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    &__images {
+        display: flex;
+        gap: 3.2rem;
+        margin-bottom: 3.2rem;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 4.8rem;
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    &__image {
+        margin: 0;
+        height: 50rem;
+        border-radius: 2rem;
+        width: 100%;
+
+        @include small-tablet {
+            max-height: 82.4rem;
+            height: 100%;
+            border-radius: 4rem;
+            overflow: hidden;
+        }
+
+        &:first-child {
+            max-width: 34rem;
+
+            @include small-tablet {
+                max-width: 100%;
+            }
+        }
+
+        img {
+            border-radius: inherit;
+            height: 100%;
+
+            @include small-tablet {
+                height: auto;
+            }
+        }
+    }
+
+    &__company {
+        margin-bottom: 3.2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        @include small-tablet {
+            margin-bottom: 4.8rem;
+            gap: 2.4rem;
+        }
+
+        &-icon {
+            max-width: 9.2rem;
+            width: 100%;
+            height: 9.2rem;
+            padding: 1.6rem;
+            border-radius: 1.2rem;
+            background: $light-orange;
+
+            @include small-tablet {
+                max-width: 14rem;
+                height: 14rem;
+                border-radius: 2.4rem;
+                padding: 3.2rem;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            @include small-tablet {
+                gap: 0.8rem;
+            }
+        }
+
+        &-name {
+            @include h3;
+        }
+
+        &-description {
+            @include text20;
+        }
+    }
+
+    &__article {
+        &-title {
+            @include h3;
+            margin-bottom: 2.4rem;
+        }
+
+        &-description {
+            margin-bottom: 1.2rem;
+            @include text20;
+        }
+
+        &-slider {
+            margin-top: 4.4rem;
+            margin-bottom: 5.6rem;
+
+            @include small-tablet {
+                margin-top: 4.8rem;
+                margin-bottom: 4.8ren;
+            }
+        }
+
+        &-slide {
+            height: 40rem;
+
+            @include small-tablet {
+                height: 45.2rem;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            padding-left: 1.4rem;
+            margin-top: 2.5rem;
+
+            @include small-tablet {
+                padding-left: 2.8rem;
+                margin-top: 3.2rem;
+            }
+        }
+
+        &-item {
+            @include text20;
+            position: relative;
+
+            &::after {
+                @include pseudo {
+                    top: 1.2rem;
+                    left: -1.6rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    background: $black;
+                    border-radius: 50%;
+
+                    @include small-tablet {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        top: 1.6rem;
+                        left: -3.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__navigation {
+        margin-top: 2.4rem;
+
+        @include small-tablet {
+            margin-top: 5.2rem;
+        }
+    }
+
+    @include swiper-navigation {
+        .swiper-pagination-fraction {
+            width: auto;
+        }
+    }
+}

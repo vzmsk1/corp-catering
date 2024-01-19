@@ -58,6 +58,7 @@ body {
     > main {
         flex: 1 1 auto;
     }
+
     // fix for sliders
     > * {
         min-width: 0;
@@ -80,6 +81,7 @@ body {
         transition:
             opacity 0.5s ease,
             visibility 0.5s ease;
+
         &.swiper-slide-active {
             opacity: 1 !important;
             visibility: visible !important;
@@ -132,6 +134,8 @@ body {
 @import 'sections/image-text';
 @import 'sections/qualities';
 @import 'sections/quality-banner';
-@import 'sections//documents';
+@import 'sections/documents';
 @import './sections/employees';
 @import './sections/certificates';
+@import './sections/portfolio';
+@import './sections/detailed-portfolio';
