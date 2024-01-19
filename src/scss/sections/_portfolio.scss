@@ -1,0 +1,104 @@
+.portfolio {
+    margin-top: 5.6rem;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5.6rem;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 4.8rem;
+            align-items: flex-start;
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+
+        @include small-tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__description {
+        @include text20;
+        text-align: right;
+        max-width: 37.6rem;
+
+        @include small-tablet {
+            max-width: 100%;
+            text-align: left;
+        }
+    }
+
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(49rem, 1fr));
+        gap: 4.8rem 2.6rem;
+        margin-bottom: 4rem;
+
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(3n + 1) {
+            .portfolio__article-title {
+                background: $light-orange;
+            }
+        }
+
+        &:nth-child(3n + 2) {
+            .portfolio__article-title {
+                background: $green-secondary;
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            .portfolio__article-title {
+                background: $lilac;
+            }
+        }
+
+        &-image {
+            margin: 0;
+            height: 61.8rem;
+            border-radius: 2rem;
+
+            @include small-tablet {
+                height: 86.4rem;
+                border-radius: 4rem;
+            }
+
+            img {
+                border-radius: inherit;
+                height: 100%;
+            }
+        }
+
+        &-title {
+            padding: 1.6rem;
+            border-radius: 2rem;
+            font-size: 2.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+
+            @include small-tablet {
+                padding: 3.2rem;
+                border-radius: 4rem;
+                font-size: 4rem;
+            }
+        }
+    }
+}
