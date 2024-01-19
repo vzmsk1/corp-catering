@@ -58,7 +58,7 @@
         }
 
         .swiper-pagination-fraction {
-            @include small-tablet{
+            @include small-tablet {
                 width: max-content;
             }
         }

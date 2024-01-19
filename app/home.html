@@ -1,834 +1,1206 @@
 <!doctype html>
 <html lang="ru">
-
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="shortcut icon" href="favicon.ico" />
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body style="opacity: 0">
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container container">
-				<a href="#" class="header__logo logo-header"><img src="img/logo.svg" alt="" class="logo-header__image" /></a>
-				<div class="header__menu menu">
-					<button type="button" class="menu__hamburger hamburger">
-						<span></span>
-					</button>
-					<div class="menu__body">
-						<nav class="menu__nav">
-							<a href="#" class="menu__link"><span class="menu__link-txt bold">Корпоративное питание</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Доставка</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
-							<a href="#" class="menu__link"><span class="menu__link-txt">Контакты</span></a>
-						</nav>
-						<div class="menu__footer"></div>
-						<span class="menu__ellipse ellipse"></span>
-					</div>
-				</div>
-				<a href="tel:74991362923" class="header__call-icon call-icon-header"><img src="img/icons/call.svg" alt="" class="call-icon-header__image" /></a>
-				<div data-da=".menu__footer,768,first" class="header__call call-header">
-					<a href="tel:74991362923" class="call-header__link"><span class="call-header__link-txt">+7 (499) 136 29 23</span></a>
-					<span class="call-header__text">с 9:00 до 21:00</span>
-				</div>
-				<button data-modal="#applicationModal" data-da=".menu__footer,768,last" type="button" class="header__btn btn">
-					<span class="btn__text">Оставить заявку</span>
-				</button>
-			</div>
-		</header>
-
-		<main class="main">
-			<section class="hero-mainpage">
-				<div class="hero-mainpage__container container">
-					<div class="hero-mainpage__body">
-						<span class="hero-mainpage__title">Организуем корпоративное питание</span>
-						<div class="hero-mainpage__content">
-							<div class="hero-mainpage__image-wrap">
-								<img src="img/hero/b97791d91f012d4f6b50816267e9fd0b.webp" alt="" class="hero-mainpage__image" />
-							</div>
-							<div class="hero-mainpage__info">
-								<p class="hero-mainpage__text">
-									Выбирайте и заказывайте комплексные обеды с доставкой в офис
-								</p>
-								<div class="hero-mainpage__groups">
-									<div class="hero-mainpage__group group-hero-mainpage">
-										<span class="group-hero-mainpage__heading">1000+</span>
-										<span class="group-hero-mainpage__text">довольных клиентов</span>
-									</div>
-									<div class="hero-mainpage__group group-hero-mainpage">
-										<span class="group-hero-mainpage__heading">5</span>
-										<span class="group-hero-mainpage__text">лет опыта</span>
-									</div>
-									<div class="hero-mainpage__group group-hero-mainpage">
-										<span class="group-hero-mainpage__heading">80+</span>
-										<span class="group-hero-mainpage__text">блюд на выбор</span>
-									</div>
-									<div class="hero-mainpage__group group-hero-mainpage">
-										<span class="group-hero-mainpage__heading">5000 <span class="rub">₽</span></span>
-										<span class="group-hero-mainpage__text">минимальный заказ</span>
-									</div>
-								</div>
-								<form data-dev action="#" class="hero-mainpage__order-form order-form">
-									<div class="order-form__input input">
-										<input data-phone-mask data-validate data-required autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
-									</div>
-									<button type="submit" class="order-form__btn btn">
-										<span class="btn__text">Заказать</span>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div data-da=".hero-mainpage__info,768,1" class="hero-mainpage__carousel">
-						<div class="hero-mainpage__slider swiper">
-							<div class="hero-mainpage__wrapper swiper-wrapper">
-								<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
-									<div class="slide-hero-mainpage__image-wrap">
-										<img src="img/hero/dfdbae0f603a6b705cc3820fdfa9c7ec.webp" alt="" class="slide-hero-mainpage__image" />
-									</div>
-									<span class="slide-hero-mainpage__title">Организуем корпоративное питание</span>
-									<p class="slide-hero-mainpage__text">
-										Выбирайте и заказывайте комплексные обеды с доставкой в офис
-									</p>
-								</div>
-								<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
-									<div class="slide-hero-mainpage__image-wrap">
-										<img src="img/hero/b97791d91f012d4f6b50816267e9fd0b.webp" alt="" class="slide-hero-mainpage__image" />
-									</div>
-									<span class="slide-hero-mainpage__title">Организуем корпоративное питание</span>
-									<p class="slide-hero-mainpage__text">
-										Выбирайте и заказывайте комплексные обеды с доставкой в офис
-									</p>
-								</div>
-								<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
-									<div class="slide-hero-mainpage__image-wrap">
-										<img src="img/hero/dfdbae0f603a6b705cc3820fdfa9c7ec.webp" alt="" class="slide-hero-mainpage__image" />
-									</div>
-									<span class="slide-hero-mainpage__title">Организуем корпоративное питание</span>
-									<p class="slide-hero-mainpage__text">
-										Выбирайте и заказывайте комплексные обеды с доставкой в офис
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="hero-mainpage__navigation swiper-navigation sl-nav">
-							<button type="button" class="swiper-button-prev hero-mainpage__button-prev">
-								<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
-								</svg>
-							</button>
-							<span class="hero-mainpage__fraction"></span>
-							<button type="button" class="swiper-button-next hero-mainpage__button-next">
-								<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
-								</svg>
-							</button>
-						</div>
-					</div>
-					<span class="hero-mainpage__ellipse ellipse"></span>
-				</div>
-			</section>
-			<section class="offers">
-				<div class="offers__container container">
-					<div class="offers__head">
-						<span class="offers__title">Наши предложения</span>
-						<p class="offers__text">Вы всегда можете поменять состав обеда на ваш вкус</p>
-					</div>
-					<div class="offers__body">
-						<div class="offers__cards">
-							<div class="offers__card offer-card">
-								<div class="offer-card__wrap">
-									<div class="offer-card__content">
-										<div class="offer-card__head">
-											<div class="offer-card__title-wrap">
-												<span class="offer-card__title">Обед сытный</span>
-												<span class="offer-card__subtitle"><span>Меню для примера</span></span>
-											</div>
-											<div class="offer-card__arr-btn arr-btn">
-												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
-											</div>
-											<div data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card" class="offer-card__label">
-												<p class="offer-card__label-txt">Заказ <span>от 10 порций</span></p>
-											</div>
-										</div>
-										<div class="offer-card__body">
-											<div class="offer-card__menu menu-offer-card">
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">01</span><span class="menu-offer-card__text">Салат "Оливье"</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">02</span><span class="menu-offer-card__text">Суп «Борщ»</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">03</span><span class="menu-offer-card__text">Шницель куриный</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">04</span><span>Картофель стоуни по деревенски</span>
-													</li>
-												</ul>
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">05</span><span class="menu-offer-card__text">Хлеб</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">06</span><span class="menu-offer-card__text">Ягодный компот</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">07</span><span class="menu-offer-card__text">Блинчик с яблоком</span>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="offer-card__footer">
-											<div class="offer-card__price"><span>250 ₽</span> / порция</div>
-											<a href="#" class="offer-card__btn btn"><span class="btn__text">Заказать обед</span></a>
-										</div>
-									</div>
-									<div data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card" class="offer-card__image-wrap">
-										<img src="img/offers/b2705b516d60070084186d1643d58567.webp" alt="" class="offer-card__image" />
-									</div>
-								</div>
-							</div>
-							<div class="offers__card offer-card">
-								<div class="offer-card__wrap">
-									<div class="offer-card__content">
-										<div class="offer-card__head">
-											<div class="offer-card__title-wrap">
-												<span class="offer-card__title">Обед стандартный</span>
-												<span class="offer-card__subtitle"><span>Меню для примера</span></span>
-											</div>
-											<div class="offer-card__arr-btn arr-btn">
-												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
-											</div>
-											<div data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card" class="offer-card__label">
-												<p class="offer-card__label-txt">Заказ <span>от 10 порций</span></p>
-											</div>
-										</div>
-										<div class="offer-card__body">
-											<div class="offer-card__menu menu-offer-card">
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">01</span><span class="menu-offer-card__text">Салат "Оливье"</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">02</span><span class="menu-offer-card__text">Суп «Борщ»</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">03</span><span class="menu-offer-card__text">Шницель куриный</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">04</span><span>Картофель стоуни по деревенски</span>
-													</li>
-												</ul>
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">05</span><span class="menu-offer-card__text">Хлеб</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">06</span><span class="menu-offer-card__text">Ягодный компот</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">07</span><span class="menu-offer-card__text">Блинчик с яблоком</span>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="offer-card__footer">
-											<div class="offer-card__price"><span>250 ₽</span> / порция</div>
-											<a href="#" class="offer-card__btn btn"><span class="btn__text">Заказать обед</span></a>
-										</div>
-									</div>
-									<div data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card" class="offer-card__image-wrap">
-										<img src="img/offers/85c4a7251a02ec026bcf48a425e41609.webp" alt="" class="offer-card__image" />
-									</div>
-								</div>
-							</div>
-							<div class="offers__card offer-card">
-								<div class="offer-card__wrap">
-									<div class="offer-card__content">
-										<div class="offer-card__head">
-											<div class="offer-card__title-wrap">
-												<span class="offer-card__title">Обед базовый</span>
-												<span class="offer-card__subtitle"><span>Меню для примера</span></span>
-											</div>
-											<div class="offer-card__arr-btn arr-btn">
-												<img src="img/icons/sm-arr.svg" alt="" class="arr-btn__icon" />
-											</div>
-											<div data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card" class="offer-card__label">
-												<p class="offer-card__label-txt">Заказ <span>от 10 порций</span></p>
-											</div>
-										</div>
-										<div class="offer-card__body">
-											<div class="offer-card__menu menu-offer-card">
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">01</span><span class="menu-offer-card__text">Салат "Оливье"</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">02</span><span class="menu-offer-card__text">Суп «Борщ»</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">03</span><span class="menu-offer-card__text">Шницель куриный</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">04</span><span>Картофель стоуни по деревенски</span>
-													</li>
-												</ul>
-												<ul class="menu-offer-card__list">
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">05</span><span class="menu-offer-card__text">Хлеб</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">06</span><span class="menu-offer-card__text">Ягодный компот</span>
-													</li>
-													<li class="menu-offer-card__item">
-														<span class="menu-offer-card__num">07</span><span class="menu-offer-card__text">Блинчик с яблоком</span>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="offer-card__footer">
-											<div class="offer-card__price"><span>250 ₽</span> / порция</div>
-											<a href="#" class="offer-card__btn btn"><span class="btn__text">Заказать обед</span></a>
-										</div>
-									</div>
-									<div data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card" class="offer-card__image-wrap">
-										<img src="img/offers/b2705b516d60070084186d1643d58567.webp" alt="" class="offer-card__image" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="order-banner">
-				<div class="order-banner__container container">
-					<div class="order-banner__image-wrap">
-						<img src="img/bg/63b7aa081644b721e6f61fb8a0624be5.webp" alt="" class="order-banner__image" />
-					</div>
-					<div class="order-banner__content">
-						<span class="order-banner__title">Закажите пробный обед</span>
-						<p class="order-banner__text">
-							Устройте дегустацию наших блюд, чтобы убедиться в их качестве - привезем обеды от 1 шт для
-							пробы с бесплатной доставкой
-						</p>
-						<form data-dev action="#" class="order-banner__form">
-							<div class="order-banner__input input">
-								<input data-validate data-required data-phone-mask autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
-							</div>
-							<button type="submit" class="order-banner__btn btn">
-								<span class="btn__text">Заказать</span>
-							</button>
-						</form>
-					</div>
-				</div>
-			</section>
-			<section class="benefits">
-				<div class="container">
-					<div class="benefits__content">
-						<h2 class="benefits__title section-title">Наши преимущества</h2>
-
-						<ul class="benefits__list">
-							<li class="benefits__item">
-								<div class="benefits__item-icon">
-									<img src="img/benefits/benefits-item-1.svg" alt="" />
-								</div>
-
-								<span class="benefits__item-title"> Разнообразие </span>
-
-								<p class="benefits__item-description">
-									Предоставляем <span>широкий выбор</span> блюд. Мы <span>ежедневно</span> обновляем
-									меню наших обедов, чтобы блюда не повторялись. Вы можете сами менять состав обеда на
-									свой вкус
-								</p>
-							</li>
-
-							<li class="benefits__item --big">
-								<div class="benefits__item-image">
-									<img src="img/benefits/benefits-item-big-1.webp" alt="" />
-								</div>
-							</li>
-
-							<li class="benefits__item">
-								<div class="benefits__item-icon">
-									<img src="img/benefits/benefits-item-2.svg" alt="" />
-								</div>
-
-								<span class="benefits__item-title"> Качество </span>
-
-								<p class="benefits__item-description">
-									Продукты для ваших обедов доставляются к нам на кухню
-									<span>в день доставки заказа.</span> Все наши блюда готовятся из
-									<span>натуральных</span> и <span>свежих</span> продуктов в день доставки заказа
-								</p>
-							</li>
-
-							<li class="benefits__item">
-								<div class="benefits__item-icon">
-									<img src="img/benefits/benefits-item-3.svg" alt="" />
-								</div>
-
-								<span class="benefits__item-title"> Политика цен </span>
-
-								<p class="benefits__item-description">
-									Мы <span>не экономим</span> на продуктах. Корпоративное питание должно соответствовать
-									высоким стандартам качества пищи и ее вкуса. Готовим из продуктов от
-									<span>проверенных поставщиков</span>
-								</p>
-							</li>
-
-							<li class="benefits__item --big desktop">
-								<div class="benefits__item-image">
-									<img src="img/benefits/benefits-item-big-2.webp" alt="" />
-								</div>
-							</li>
-
-							<li class="benefits__item">
-								<div class="benefits__item-icon">
-									<img src="img/benefits/benefits-item-4.svg" alt="" />
-								</div>
-
-								<span class="benefits__item-title">Комплексный подход</span>
-
-								<p class="benefits__item-description">
-									У нас есть <span>готовые решения</span> для наших заказчиков в зависимости от
-									потребностей. Организуем любые форматы столовых, кафе, доставки, фуршетов, кейтерингов
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section class="order">
-				<div class="container">
-					<div class="order__content">
-						<h2 class="order__title section-title">Как сделать заказ</h2>
-
-						<ul class="order__list">
-							<li class="order__item">
-								<div class="order__item-icon">
-									<img src="img/order/order-icon-1.svg" alt="" />
-								</div>
-
-								<p class="order__item-text">Выберите одно из наших предложений</p>
-							</li>
-
-							<li class="order__item">
-								<div class="order__item-icon">
-									<img src="img/order/order-icon-2.svg" alt="" />
-								</div>
-
-								<p class="order__item-text">
-									Оставьте заявку на сайте или по телефону
-									<a href="tel:74991362923">+7 (499) 136 29 23</a>
-								</p>
-							</li>
-
-							<li class="order__item">
-								<div class="order__item-icon">
-									<img src="img/order/order-icon-3.svg" alt="" />
-								</div>
-
-								<p class="order__item-text">Согласуйте состав обеда и время доставки</p>
-							</li>
-
-							<li class="order__item">
-								<div class="order__item-icon">
-									<img src="img/order/order-icon-4.svg" alt="" />
-								</div>
-
-								<p class="order__item-text">Отдохните, пока мы готовим и доставляем ваш заказ</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="selection">
-				<div class="container">
-					<div class="selection__content">
-						<div class="selection__star">
-							<img src="img/star.svg" alt="" />
-
-							<span class="selection__subtitle">Блюда на выбор</span>
-						</div>
-
-						<div class="selection__info">
-							<h2 class="selection__title">Подберём обед с учётом Ваших потребностей и пожеланий</h2>
-
-							<p class="selection__description">
-								У Вас есть возможность самостоятельно составить свой идеальный обед, выбрав позиции из
-								нашего разнообразного меню. Мы предлагаем широкий выбор блюд, включающий разные кухни и
-								типы блюд.
-							</p>
-
-							<a href="#" class="selection__btn btn"><span class="btn__text">Заказать обед</span></a>
-						</div>
-
-						<div class="selection__poster">
-							<img src="img/selection/poster.webp" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="services">
-				<div class="container">
-					<div class="services__content">
-						<div class="services__heading">
-							<h2 class="services__title section-title">Услуги</h2>
-
-							<div class="services__navigation swiper-navigation desktop">
-								<button class="swiper-button-prev services__button-prev">
-									<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
-									</svg>
-								</button>
-								<span class="services__fraction"></span>
-								<button class="swiper-button-next services__button-next">
-									<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="swiper services-swiper">
-							<div class="swiper-wrapper">
-								<a href="#" class="swiper-slide">
-									<div class="services__slide">
-										<div class="services__slide-image">
-											<img src="img/services/slide-image-1.webp" alt="" />
-										</div>
-
-										<div class="services__slide-text">
-											<span class="services__slide-text-title"> Корпоративное питание </span>
-
-											<p class="services__slide-text-description">
-												Вкусное и разнообразное питание с доставкой в офис
-											</p>
-										</div>
-									</div>
-								</a>
-								<a href="#" class="swiper-slide">
-									<div class="services__slide">
-										<div class="services__slide-image">
-											<img src="img/services/slide-image-2.webp" alt="" />
-										</div>
-
-										<div class="services__slide-text">
-											<span class="services__slide-text-title">Кофе брейк</span>
-
-											<p class="services__slide-text-description">
-												Ароматный кофе для ваших перерывов на семинарах, лекциях и тренингах
-											</p>
-										</div>
-									</div>
-								</a>
-								<a href="#" class="swiper-slide">
-									<div class="services__slide">
-										<div class="services__slide-image">
-											<img src="img/services/slide-image-1.webp" alt="" />
-										</div>
-
-										<div class="services__slide-text">
-											<span class="services__slide-text-title"> Корпоративное питание </span>
-
-											<p class="services__slide-text-description">
-												Вкусное и разнообразное питание с доставкой в офис
-											</p>
-										</div>
-									</div>
-								</a>
-								<a href="#" class="swiper-slide">
-									<div class="services__slide">
-										<div class="services__slide-image">
-											<img src="img/services/slide-image-1.webp" alt="" />
-										</div>
-
-										<div class="services__slide-text">
-											<span class="services__slide-text-title"> Корпоративное питание </span>
-
-											<p class="services__slide-text-description">
-												Вкусное и разнообразное питание с доставкой в офис
-											</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<a href="#" class="services__link link">
-								<span>Смотреть все</span>
-
-								<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#1D1D1D" />
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="reviews">
-				<div class="container">
-					<div class="reviews__content">
-						<div class="reviews__heading">
-							<h2 class="reviews__title section-title">Отзывы</h2>
-
-							<div class="reviews__navigation swiper-navigation desktop">
-								<button class="swiper-button-prev reviews__button-prev">
-									<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
-									</svg>
-								</button>
-								<span class="reviews__fraction"></span>
-								<button class="swiper-button-next reviews__button-next">
-									<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="swiper reviews-swiper">
-							<ul class="swiper-wrapper">
-								<li class="swiper-slide">
-									<div class="reviews__slide">
-										<div class="reviews__slide-heading">
-											<div class="reviews__slide-icon">
-												<img src="img/reviews/reviews-icon.svg" alt="" />
-											</div>
-
-											<div class="reviews__slide-heading-author">
-												<span class="reviews__slide-heading-title"> Иван Иванов </span>
-
-												<time class="reviews__slide-heading-date"> 14.11.23 </time>
-											</div>
-										</div>
-
-										<p class="reviews__slide-description">
-											Очень вкусная и свежая еда с доставкой! Прямо как дома от любимой мамы) Все
-											всегда аккуратно и тщательно запаковано) Всем рекомендую брать! Доставляют
-											вовремя и точно в срок. Напитки в обеде очень вкусные - утоляют жажду после
-											сытного, сбалансированного обеда! Очень надеемся на расширение бизнеса и
-											появления линейки завтраков для сонных сотрудников офисов)
-										</p>
-									</div>
-								</li>
-								<li class="swiper-slide">
-									<div class="reviews__slide">
-										<div class="reviews__slide-heading">
-											<div class="reviews__slide-icon">
-												<img src="img/reviews/reviews-icon.svg" alt="" />
-											</div>
-
-											<div class="reviews__slide-heading-author">
-												<span class="reviews__slide-heading-title"> Иван Иванов </span>
-
-												<time class="reviews__slide-heading-date"> 14.11.23 </time>
-											</div>
-										</div>
-
-										<p class="reviews__slide-description">
-											Очень вкусная и свежая еда с доставкой! Прямо как дома от любимой мамы) Все
-											всегда аккуратно и тщательно запаковано) Всем рекомендую брать! Доставляют
-											вовремя и точно в срок. Напитки в обеде очень вкусные - утоляют жажду после
-											сытного, сбалансированного обеда! Очень надеемся на расширение бизнеса и
-											появления линейки завтраков для сонных сотрудников офисов)
-										</p>
-									</div>
-								</li>
-								<li class="swiper-slide">
-									<div class="reviews__slide">
-										<div class="reviews__slide-heading">
-											<div class="reviews__slide-icon">
-												<img src="img/reviews/reviews-icon.svg" alt="" />
-											</div>
-
-											<div class="reviews__slide-heading-author">
-												<span class="reviews__slide-heading-title"> Иван Иванов </span>
-
-												<time class="reviews__slide-heading-date"> 14.11.23 </time>
-											</div>
-										</div>
-
-										<p class="reviews__slide-description">
-											Очень вкусная и свежая еда с доставкой! Прямо как дома от любимой мамы) Все
-											всегда аккуратно и тщательно запаковано) Всем рекомендую брать! Доставляют
-											вовремя и точно в срок. Напитки в обеде очень вкусные - утоляют жажду после
-											сытного, сбалансированного обеда! Очень надеемся на расширение бизнеса и
-											появления линейки завтраков для сонных сотрудников офисов)
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<div class="reviews__navigation swiper-navigation mobile">
-							<button class="swiper-button-prev reviews__button-prev">
-								<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z" fill="#0B4333" />
-								</svg>
-							</button>
-							<span class="reviews__fraction-mobile"></span>
-							<button class="swiper-button-next reviews__button-next">
-								<svg width="59" height="16" viewBox="0 0 59 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z" fill="#0B4333" />
-								</svg>
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="request">
-				<div class="container">
-					<div class="request__content">
-						<div class="request__form">
-							<div class="request__form-text">
-								<h2 class="request__title">Оставьте заявку</h2>
-
-								<p class="request__description">
-									Если у Вас есть вопросы, оставьте заявку и наш менеджер свяжется с Вами в ближайшее
-									время.
-								</p>
-							</div>
-
-							<form data-dev action="#">
-								<div class="request__input input">
-									<input data-validate data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле" placeholder="Имя" class="input__field" />
-								</div>
-								<div class="request__input input">
-									<input data-phone-mask data-validate data-required autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
-								</div>
-
-								<p class="request__form-copyright">
-									Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
-								</p>
-
-								<button type="submit" class="request__btn btn">
-									<span class="btn__text">Отправить</span>
-								</button>
-							</form>
-						</div>
-
-						<div class="request__poster">
-							<img src="img/request/poster.webp" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</main>
-		<footer class="footer">
-			<div class="footer__container container">
-				<div class="footer__main">
-					<div class="footer__group">
-						<a href="#" class="footer__logo logo-footer"><img src="img/logo.svg" alt="" class="logo-footer__image" /></a>
-						<p class="footer__text">
-							Наша главная миссия: сделать вкусную и разнообразную еду на любое
-							предпочтение, попробуй идею на вкус!
-						</p>
-					</div>
-					<nav class="footer__nav nav-footer">
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a>
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">Услуги</span></a>
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">доставка</span></a>
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">о нас</span></a>
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">статьи</span></a>
-						<a href="#" class="nav-footer__link"><span class="nav-footer__link-txt">контакты</span></a>
-					</nav>
-				</div>
-				<div class="footer__lower">
-					<a href="#" class="footer__policy">Политика конфиденциальности</a>
-					<ul class="footer__contacts contacts-footer">
-						<li class="contacts-footer__item">
-							<a href="mailto:forexample@.com" class="contacts-footer__link">forexample@.com</a>
-						</li>
-						<li class="contacts-footer__item">
-							<a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__request-design request-design">
-					<span class="request-design__text">© Все права защищены.</span>
-					<a href="https://requestdesign.ru/" class="request-design__logo"><img src="img/rd-logo.svg" alt="" class="request-design__logo-image" /></a>
-				</div>
-			</div>
-		</footer>
-		<div id="applicationModal" aria-hidden="true" class="modal application-modal">
-			<div class="modal__wrapper">
-				<div class="modal__content">
-					<div class="modal__body">
-						<div class="application-modal__inner">
-							<div class="application-modal__image-wrap">
-								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
-							</div>
-							<div class="application-modal__content">
-								<button data-close type="button" class="application-modal__close">
-									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
-								</button>
-								<span class="application-modal__title">Оставьте заявку</span>
-								<form data-modal-message="#applicationSentModal" data-dev action="#" class="application-modal__form">
-									<div class="application-modal__fields">
-										<div class="application-modal__input input">
-											<input data-validate data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле" placeholder="Имя" class="input__field" />
-										</div>
-										<div class="application-modal__input input">
-											<input data-validate data-required data-phone-mask autocomplete="off" type="tel" name="form[]" data-error="Заполните поле" placeholder="Телефон" class="input__field" />
-										</div>
-									</div>
-									<p class="application-modal__text">
-										Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
-									</p>
-									<button type="submit" class="application-modal__btn btn">
-										<span class="btn__text">Отправить</span>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="applicationSentModal" aria-hidden="true" class="modal application-modal application-modal_sent">
-			<div class="modal__wrapper">
-				<div class="modal__content">
-					<div class="modal__body">
-						<div class="application-modal__inner">
-							<div class="application-modal__image-wrap">
-								<img src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp" alt="" class="application-modal__image" />
-							</div>
-							<div class="application-modal__content">
-								<button data-close type="button" class="application-modal__close">
-									<img src="img/icons/cross-gray.svg" alt="" class="application-modal__close-icon" />
-								</button>
-								<span class="application-modal__title">Ваша заявка отправлена</span>
-								<p class="application-modal__text">
-									Наш менеджер с скоро свяжется с Вами для уточнения деталей!
-								</p>
-								<a href="#" class="application-modal__btn btn">
-									<span class="btn__text">На главную</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<script src="js/app.js"></script>
-
-</body>
-
+    <head>
+        <title>Главная</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- <style>body{opacity: 0;}</style> -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body style="opacity: 0">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container container">
+                    <a href="#" class="header__logo logo-header"
+                        ><img src="img/logo.svg" alt="" class="logo-header__image"
+                    /></a>
+                    <div class="header__menu menu">
+                        <button type="button" class="menu__hamburger hamburger">
+                            <span></span>
+                        </button>
+                        <div class="menu__body">
+                            <nav class="menu__nav">
+                                <a href="#" class="menu__link"
+                                    ><span class="menu__link-txt bold">Корпоративное питание</span></a
+                                >
+                                <a href="#" class="menu__link"><span class="menu__link-txt">Услуги</span></a>
+                                <a href="#" class="menu__link"
+                                    ><span class="menu__link-txt">Доставка</span></a
+                                >
+                                <a href="#" class="menu__link"><span class="menu__link-txt">О нас</span></a>
+                                <a href="#" class="menu__link"
+                                    ><span class="menu__link-txt">Контакты</span></a
+                                >
+                            </nav>
+                            <div class="menu__footer"></div>
+                            <span class="menu__ellipse ellipse"></span>
+                        </div>
+                    </div>
+                    <a href="tel:74991362923" class="header__call-icon call-icon-header"
+                        ><img src="img/icons/call.svg" alt="" class="call-icon-header__image"
+                    /></a>
+                    <div data-da=".menu__footer,768,first" class="header__call call-header">
+                        <a href="tel:74991362923" class="call-header__link"
+                            ><span class="call-header__link-txt">+7 (499) 136 29 23</span></a
+                        >
+                        <span class="call-header__text">с 9:00 до 21:00</span>
+                    </div>
+                    <button
+                        data-modal="#applicationModal"
+                        data-da=".menu__footer,768,last"
+                        type="button"
+                        class="header__btn btn"
+                    >
+                        <span class="btn__text">Оставить заявку</span>
+                    </button>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="hero-mainpage">
+                    <div class="hero-mainpage__container container">
+                        <div class="hero-mainpage__body">
+                            <span class="hero-mainpage__title">Организуем корпоративное питание</span>
+                            <div class="hero-mainpage__content">
+                                <div class="hero-mainpage__image-wrap">
+                                    <img
+                                        src="img/hero/b97791d91f012d4f6b50816267e9fd0b.webp"
+                                        alt=""
+                                        class="hero-mainpage__image"
+                                    />
+                                </div>
+                                <div class="hero-mainpage__info">
+                                    <p class="hero-mainpage__text">
+                                        Выбирайте и заказывайте комплексные обеды с доставкой в офис
+                                    </p>
+                                    <div class="hero-mainpage__groups">
+                                        <div class="hero-mainpage__group group-hero-mainpage">
+                                            <span class="group-hero-mainpage__heading">1000+</span>
+                                            <span class="group-hero-mainpage__text">довольных клиентов</span>
+                                        </div>
+                                        <div class="hero-mainpage__group group-hero-mainpage">
+                                            <span class="group-hero-mainpage__heading">5</span>
+                                            <span class="group-hero-mainpage__text">лет опыта</span>
+                                        </div>
+                                        <div class="hero-mainpage__group group-hero-mainpage">
+                                            <span class="group-hero-mainpage__heading">80+</span>
+                                            <span class="group-hero-mainpage__text">блюд на выбор</span>
+                                        </div>
+                                        <div class="hero-mainpage__group group-hero-mainpage">
+                                            <span class="group-hero-mainpage__heading"
+                                                >5000 <span class="rub">₽</span></span
+                                            >
+                                            <span class="group-hero-mainpage__text">минимальный заказ</span>
+                                        </div>
+                                    </div>
+                                    <form data-dev action="#" class="hero-mainpage__order-form order-form">
+                                        <div class="order-form__input input">
+                                            <input
+                                                data-phone-mask
+                                                data-validate
+                                                data-required
+                                                autocomplete="off"
+                                                type="tel"
+                                                name="form[]"
+                                                data-error="Заполните поле"
+                                                placeholder="Телефон"
+                                                class="input__field"
+                                            />
+                                        </div>
+                                        <button type="submit" class="order-form__btn btn">
+                                            <span class="btn__text">Заказать</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-da=".hero-mainpage__info,768,1" class="hero-mainpage__carousel">
+                            <div class="hero-mainpage__slider swiper">
+                                <div class="hero-mainpage__wrapper swiper-wrapper">
+                                    <div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+                                        <div class="slide-hero-mainpage__image-wrap">
+                                            <img
+                                                src="img/hero/dfdbae0f603a6b705cc3820fdfa9c7ec.webp"
+                                                alt=""
+                                                class="slide-hero-mainpage__image"
+                                            />
+                                        </div>
+                                        <span class="slide-hero-mainpage__title"
+                                            >Организуем корпоративное питание</span
+                                        >
+                                        <p class="slide-hero-mainpage__text">
+                                            Выбирайте и заказывайте комплексные обеды с доставкой в офис
+                                        </p>
+                                    </div>
+                                    <div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+                                        <div class="slide-hero-mainpage__image-wrap">
+                                            <img
+                                                src="img/hero/b97791d91f012d4f6b50816267e9fd0b.webp"
+                                                alt=""
+                                                class="slide-hero-mainpage__image"
+                                            />
+                                        </div>
+                                        <span class="slide-hero-mainpage__title"
+                                            >Организуем корпоративное питание</span
+                                        >
+                                        <p class="slide-hero-mainpage__text">
+                                            Выбирайте и заказывайте комплексные обеды с доставкой в офис
+                                        </p>
+                                    </div>
+                                    <div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+                                        <div class="slide-hero-mainpage__image-wrap">
+                                            <img
+                                                src="img/hero/dfdbae0f603a6b705cc3820fdfa9c7ec.webp"
+                                                alt=""
+                                                class="slide-hero-mainpage__image"
+                                            />
+                                        </div>
+                                        <span class="slide-hero-mainpage__title"
+                                            >Организуем корпоративное питание</span
+                                        >
+                                        <p class="slide-hero-mainpage__text">
+                                            Выбирайте и заказывайте комплексные обеды с доставкой в офис
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-mainpage__navigation swiper-navigation sl-nav">
+                                <button type="button" class="swiper-button-prev hero-mainpage__button-prev">
+                                    <svg
+                                        width="59"
+                                        height="16"
+                                        viewBox="0 0 59 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z"
+                                            fill="#0B4333"
+                                        />
+                                    </svg>
+                                </button>
+                                <span class="hero-mainpage__fraction"></span>
+                                <button type="button" class="swiper-button-next hero-mainpage__button-next">
+                                    <svg
+                                        width="59"
+                                        height="16"
+                                        viewBox="0 0 59 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z"
+                                            fill="#0B4333"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="hero-mainpage__ellipse ellipse"></span>
+                    </div>
+                </section>
+                <section class="offers">
+                    <div class="offers__container container">
+                        <div class="offers__head">
+                            <span class="offers__title">Наши предложения</span>
+                            <p class="offers__text">Вы всегда можете поменять состав обеда на ваш вкус</p>
+                        </div>
+                        <div class="offers__body">
+                            <div class="offers__cards">
+                                <div class="offers__card offer-card">
+                                    <div class="offer-card__wrap">
+                                        <div class="offer-card__content">
+                                            <div class="offer-card__head">
+                                                <div class="offer-card__title-wrap">
+                                                    <span class="offer-card__title">Обед сытный</span>
+                                                    <span class="offer-card__subtitle"
+                                                        ><span>Меню для примера</span></span
+                                                    >
+                                                </div>
+                                                <div class="offer-card__arr-btn arr-btn">
+                                                    <img
+                                                        src="img/icons/sm-arr.svg"
+                                                        alt=""
+                                                        class="arr-btn__icon"
+                                                    />
+                                                </div>
+                                                <div
+                                                    data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card"
+                                                    class="offer-card__label"
+                                                >
+                                                    <p class="offer-card__label-txt">
+                                                        Заказ <span>от 10 порций</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__body">
+                                                <div class="offer-card__menu menu-offer-card">
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">01</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Салат "Оливье"</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">02</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Суп «Борщ»</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">03</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Шницель куриный</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">04</span
+                                                            ><span>Картофель стоуни по деревенски</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">05</span
+                                                            ><span class="menu-offer-card__text">Хлеб</span>
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">06</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Ягодный компот</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">07</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Блинчик с яблоком</span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__footer">
+                                                <div class="offer-card__price">
+                                                    <span>250 ₽</span> / порция
+                                                </div>
+                                                <a href="#" class="offer-card__btn btn"
+                                                    ><span class="btn__text">Заказать обед</span></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card"
+                                            class="offer-card__image-wrap"
+                                        >
+                                            <img
+                                                src="img/offers/b2705b516d60070084186d1643d58567.webp"
+                                                alt=""
+                                                class="offer-card__image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offers__card offer-card">
+                                    <div class="offer-card__wrap">
+                                        <div class="offer-card__content">
+                                            <div class="offer-card__head">
+                                                <div class="offer-card__title-wrap">
+                                                    <span class="offer-card__title">Обед стандартный</span>
+                                                    <span class="offer-card__subtitle"
+                                                        ><span>Меню для примера</span></span
+                                                    >
+                                                </div>
+                                                <div class="offer-card__arr-btn arr-btn">
+                                                    <img
+                                                        src="img/icons/sm-arr.svg"
+                                                        alt=""
+                                                        class="arr-btn__icon"
+                                                    />
+                                                </div>
+                                                <div
+                                                    data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card"
+                                                    class="offer-card__label"
+                                                >
+                                                    <p class="offer-card__label-txt">
+                                                        Заказ <span>от 10 порций</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__body">
+                                                <div class="offer-card__menu menu-offer-card">
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">01</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Салат "Оливье"</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">02</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Суп «Борщ»</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">03</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Шницель куриный</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">04</span
+                                                            ><span>Картофель стоуни по деревенски</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">05</span
+                                                            ><span class="menu-offer-card__text">Хлеб</span>
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">06</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Ягодный компот</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">07</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Блинчик с яблоком</span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__footer">
+                                                <div class="offer-card__price">
+                                                    <span>250 ₽</span> / порция
+                                                </div>
+                                                <a href="#" class="offer-card__btn btn"
+                                                    ><span class="btn__text">Заказать обед</span></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card"
+                                            class="offer-card__image-wrap"
+                                        >
+                                            <img
+                                                src="img/offers/85c4a7251a02ec026bcf48a425e41609.webp"
+                                                alt=""
+                                                class="offer-card__image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offers__card offer-card">
+                                    <div class="offer-card__wrap">
+                                        <div class="offer-card__content">
+                                            <div class="offer-card__head">
+                                                <div class="offer-card__title-wrap">
+                                                    <span class="offer-card__title">Обед базовый</span>
+                                                    <span class="offer-card__subtitle"
+                                                        ><span>Меню для примера</span></span
+                                                    >
+                                                </div>
+                                                <div class="offer-card__arr-btn arr-btn">
+                                                    <img
+                                                        src="img/icons/sm-arr.svg"
+                                                        alt=""
+                                                        class="arr-btn__icon"
+                                                    />
+                                                </div>
+                                                <div
+                                                    data-dom-replace=".offer-card__head,.offer-card__image-wrap,.offer-card"
+                                                    class="offer-card__label"
+                                                >
+                                                    <p class="offer-card__label-txt">
+                                                        Заказ <span>от 10 порций</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__body">
+                                                <div class="offer-card__menu menu-offer-card">
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">01</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Салат "Оливье"</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">02</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Суп «Борщ»</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">03</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Шницель куриный</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">04</span
+                                                            ><span>Картофель стоуни по деревенски</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu-offer-card__list">
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">05</span
+                                                            ><span class="menu-offer-card__text">Хлеб</span>
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">06</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Ягодный компот</span
+                                                            >
+                                                        </li>
+                                                        <li class="menu-offer-card__item">
+                                                            <span class="menu-offer-card__num">07</span
+                                                            ><span class="menu-offer-card__text"
+                                                                >Блинчик с яблоком</span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="offer-card__footer">
+                                                <div class="offer-card__price">
+                                                    <span>250 ₽</span> / порция
+                                                </div>
+                                                <a href="#" class="offer-card__btn btn"
+                                                    ><span class="btn__text">Заказать обед</span></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            data-dom-replace=".offer-card__wrap,.offer-card__content,.offer-card"
+                                            class="offer-card__image-wrap"
+                                        >
+                                            <img
+                                                src="img/offers/b2705b516d60070084186d1643d58567.webp"
+                                                alt=""
+                                                class="offer-card__image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order-banner">
+                    <div class="order-banner__container container">
+                        <div class="order-banner__image-wrap">
+                            <img
+                                src="img/bg/63b7aa081644b721e6f61fb8a0624be5.webp"
+                                alt=""
+                                class="order-banner__image"
+                            />
+                        </div>
+                        <div class="order-banner__content">
+                            <span class="order-banner__title">Закажите пробный обед</span>
+                            <p class="order-banner__text">
+                                Устройте дегустацию наших блюд, чтобы убедиться в их качестве - привезем обеды
+                                от 1 шт для пробы с бесплатной доставкой
+                            </p>
+                            <form data-dev action="#" class="order-banner__form">
+                                <div class="order-banner__input input">
+                                    <input
+                                        data-validate
+                                        data-required
+                                        data-phone-mask
+                                        autocomplete="off"
+                                        type="tel"
+                                        name="form[]"
+                                        data-error="Заполните поле"
+                                        placeholder="Телефон"
+                                        class="input__field"
+                                    />
+                                </div>
+                                <button type="submit" class="order-banner__btn btn">
+                                    <span class="btn__text">Заказать</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="container">
+                        <div class="benefits__content">
+                            <h2 class="benefits__title section-title">Наши преимущества</h2>
+
+                            <ul class="benefits__list">
+                                <li class="benefits__item">
+                                    <div class="benefits__item-icon">
+                                        <img src="img/benefits/benefits-item-1.svg" alt="" />
+                                    </div>
+
+                                    <span class="benefits__item-title"> Разнообразие </span>
+
+                                    <p class="benefits__item-description">
+                                        Предоставляем <span>широкий выбор</span> блюд. Мы
+                                        <span>ежедневно</span> обновляем меню наших обедов, чтобы блюда не
+                                        повторялись. Вы можете сами менять состав обеда на свой вкус
+                                    </p>
+                                </li>
+
+                                <li class="benefits__item --big">
+                                    <div class="benefits__item-image">
+                                        <img src="img/benefits/benefits-item-big-1.webp" alt="" />
+                                    </div>
+                                </li>
+
+                                <li class="benefits__item">
+                                    <div class="benefits__item-icon">
+                                        <img src="img/benefits/benefits-item-2.svg" alt="" />
+                                    </div>
+
+                                    <span class="benefits__item-title"> Качество </span>
+
+                                    <p class="benefits__item-description">
+                                        Продукты для ваших обедов доставляются к нам на кухню
+                                        <span>в день доставки заказа.</span> Все наши блюда готовятся из
+                                        <span>натуральных</span> и <span>свежих</span> продуктов в день
+                                        доставки заказа
+                                    </p>
+                                </li>
+
+                                <li class="benefits__item">
+                                    <div class="benefits__item-icon">
+                                        <img src="img/benefits/benefits-item-3.svg" alt="" />
+                                    </div>
+
+                                    <span class="benefits__item-title"> Политика цен </span>
+
+                                    <p class="benefits__item-description">
+                                        Мы <span>не экономим</span> на продуктах. Корпоративное питание должно
+                                        соответствовать высоким стандартам качества пищи и ее вкуса. Готовим
+                                        из продуктов от
+                                        <span>проверенных поставщиков</span>
+                                    </p>
+                                </li>
+
+                                <li class="benefits__item --big desktop">
+                                    <div class="benefits__item-image">
+                                        <img src="img/benefits/benefits-item-big-2.webp" alt="" />
+                                    </div>
+                                </li>
+
+                                <li class="benefits__item">
+                                    <div class="benefits__item-icon">
+                                        <img src="img/benefits/benefits-item-4.svg" alt="" />
+                                    </div>
+
+                                    <span class="benefits__item-title">Комплексный подход</span>
+
+                                    <p class="benefits__item-description">
+                                        У нас есть <span>готовые решения</span> для наших заказчиков в
+                                        зависимости от потребностей. Организуем любые форматы столовых, кафе,
+                                        доставки, фуршетов, кейтерингов
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order">
+                    <div class="container">
+                        <div class="order__content">
+                            <h2 class="order__title section-title">Как сделать заказ</h2>
+
+                            <ul class="order__list">
+                                <li class="order__item">
+                                    <div class="order__item-icon">
+                                        <img src="img/order/order-icon-1.svg" alt="" />
+                                    </div>
+
+                                    <p class="order__item-text">Выберите одно из наших предложений</p>
+                                </li>
+
+                                <li class="order__item">
+                                    <div class="order__item-icon">
+                                        <img src="img/order/order-icon-2.svg" alt="" />
+                                    </div>
+
+                                    <p class="order__item-text">
+                                        Оставьте заявку на сайте или по телефону
+                                        <a href="tel:74991362923">+7 (499) 136 29 23</a>
+                                    </p>
+                                </li>
+
+                                <li class="order__item">
+                                    <div class="order__item-icon">
+                                        <img src="img/order/order-icon-3.svg" alt="" />
+                                    </div>
+
+                                    <p class="order__item-text">Согласуйте состав обеда и время доставки</p>
+                                </li>
+
+                                <li class="order__item">
+                                    <div class="order__item-icon">
+                                        <img src="img/order/order-icon-4.svg" alt="" />
+                                    </div>
+
+                                    <p class="order__item-text">
+                                        Отдохните, пока мы готовим и доставляем ваш заказ
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="selection">
+                    <div class="container">
+                        <div class="selection__content">
+                            <div class="selection__star">
+                                <img src="img/star.svg" alt="" />
+
+                                <span class="selection__subtitle">Блюда на выбор</span>
+                            </div>
+
+                            <div class="selection__info">
+                                <h2 class="selection__title">
+                                    Подберём обед с учётом Ваших потребностей и пожеланий
+                                </h2>
+
+                                <p class="selection__description">
+                                    У Вас есть возможность самостоятельно составить свой идеальный обед,
+                                    выбрав позиции из нашего разнообразного меню. Мы предлагаем широкий выбор
+                                    блюд, включающий разные кухни и типы блюд.
+                                </p>
+
+                                <a href="#" class="selection__btn btn"
+                                    ><span class="btn__text">Заказать обед</span></a
+                                >
+                            </div>
+
+                            <div class="selection__poster">
+                                <img src="img/selection/poster.webp" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services">
+                    <div class="container">
+                        <div class="services__content">
+                            <div class="services__heading">
+                                <h2 class="services__title section-title">Услуги</h2>
+
+                                <div class="services__navigation swiper-navigation desktop">
+                                    <button class="swiper-button-prev services__button-prev">
+                                        <svg
+                                            width="59"
+                                            height="16"
+                                            viewBox="0 0 59 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z"
+                                                fill="#0B4333"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span class="services__fraction"></span>
+                                    <button class="swiper-button-next services__button-next">
+                                        <svg
+                                            width="59"
+                                            height="16"
+                                            viewBox="0 0 59 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z"
+                                                fill="#0B4333"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper services-swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
+                                        <div class="services__slide">
+                                            <div class="services__slide-image">
+                                                <img src="img/services/slide-image-1.webp" alt="" />
+                                            </div>
+
+                                            <div class="services__slide-text">
+                                                <span class="services__slide-text-title">
+                                                    Корпоративное питание
+                                                </span>
+
+                                                <p class="services__slide-text-description">
+                                                    Вкусное и разнообразное питание с доставкой в офис
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <div class="services__slide">
+                                            <div class="services__slide-image">
+                                                <img src="img/services/slide-image-2.webp" alt="" />
+                                            </div>
+
+                                            <div class="services__slide-text">
+                                                <span class="services__slide-text-title">Кофе брейк</span>
+
+                                                <p class="services__slide-text-description">
+                                                    Ароматный кофе для ваших перерывов на семинарах, лекциях и
+                                                    тренингах
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <div class="services__slide">
+                                            <div class="services__slide-image">
+                                                <img src="img/services/slide-image-1.webp" alt="" />
+                                            </div>
+
+                                            <div class="services__slide-text">
+                                                <span class="services__slide-text-title">
+                                                    Корпоративное питание
+                                                </span>
+
+                                                <p class="services__slide-text-description">
+                                                    Вкусное и разнообразное питание с доставкой в офис
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <div class="services__slide">
+                                            <div class="services__slide-image">
+                                                <img src="img/services/slide-image-1.webp" alt="" />
+                                            </div>
+
+                                            <div class="services__slide-text">
+                                                <span class="services__slide-text-title">
+                                                    Корпоративное питание
+                                                </span>
+
+                                                <p class="services__slide-text-description">
+                                                    Вкусное и разнообразное питание с доставкой в офис
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <a href="#" class="services__link link">
+                                    <span>Смотреть все</span>
+
+                                    <svg
+                                        width="59"
+                                        height="16"
+                                        viewBox="0 0 59 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z"
+                                            fill="#1D1D1D"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="container">
+                        <div class="reviews__content">
+                            <div class="reviews__heading">
+                                <h2 class="reviews__title section-title">Отзывы</h2>
+
+                                <div class="reviews__navigation swiper-navigation desktop">
+                                    <button class="swiper-button-prev reviews__button-prev">
+                                        <svg
+                                            width="59"
+                                            height="16"
+                                            viewBox="0 0 59 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z"
+                                                fill="#0B4333"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span class="reviews__fraction"></span>
+                                    <button class="swiper-button-next reviews__button-next">
+                                        <svg
+                                            width="59"
+                                            height="16"
+                                            viewBox="0 0 59 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z"
+                                                fill="#0B4333"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper reviews-swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-heading">
+                                                <div class="reviews__slide-icon">
+                                                    <img src="img/reviews/reviews-icon.svg" alt="" />
+                                                </div>
+
+                                                <div class="reviews__slide-heading-author">
+                                                    <span class="reviews__slide-heading-title">
+                                                        Иван Иванов
+                                                    </span>
+
+                                                    <time class="reviews__slide-heading-date">
+                                                        14.11.23
+                                                    </time>
+                                                </div>
+                                            </div>
+
+                                            <p class="reviews__slide-description">
+                                                Очень вкусная и свежая еда с доставкой! Прямо как дома от
+                                                любимой мамы) Все всегда аккуратно и тщательно запаковано)
+                                                Всем рекомендую брать! Доставляют вовремя и точно в срок.
+                                                Напитки в обеде очень вкусные - утоляют жажду после сытного,
+                                                сбалансированного обеда! Очень надеемся на расширение бизнеса
+                                                и появления линейки завтраков для сонных сотрудников офисов)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-heading">
+                                                <div class="reviews__slide-icon">
+                                                    <img src="img/reviews/reviews-icon.svg" alt="" />
+                                                </div>
+
+                                                <div class="reviews__slide-heading-author">
+                                                    <span class="reviews__slide-heading-title">
+                                                        Иван Иванов
+                                                    </span>
+
+                                                    <time class="reviews__slide-heading-date">
+                                                        14.11.23
+                                                    </time>
+                                                </div>
+                                            </div>
+
+                                            <p class="reviews__slide-description">
+                                                Очень вкусная и свежая еда с доставкой! Прямо как дома от
+                                                любимой мамы) Все всегда аккуратно и тщательно запаковано)
+                                                Всем рекомендую брать! Доставляют вовремя и точно в срок.
+                                                Напитки в обеде очень вкусные - утоляют жажду после сытного,
+                                                сбалансированного обеда! Очень надеемся на расширение бизнеса
+                                                и появления линейки завтраков для сонных сотрудников офисов)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-heading">
+                                                <div class="reviews__slide-icon">
+                                                    <img src="img/reviews/reviews-icon.svg" alt="" />
+                                                </div>
+
+                                                <div class="reviews__slide-heading-author">
+                                                    <span class="reviews__slide-heading-title">
+                                                        Иван Иванов
+                                                    </span>
+
+                                                    <time class="reviews__slide-heading-date">
+                                                        14.11.23
+                                                    </time>
+                                                </div>
+                                            </div>
+
+                                            <p class="reviews__slide-description">
+                                                Очень вкусная и свежая еда с доставкой! Прямо как дома от
+                                                любимой мамы) Все всегда аккуратно и тщательно запаковано)
+                                                Всем рекомендую брать! Доставляют вовремя и точно в срок.
+                                                Напитки в обеде очень вкусные - утоляют жажду после сытного,
+                                                сбалансированного обеда! Очень надеемся на расширение бизнеса
+                                                и появления линейки завтраков для сонных сотрудников офисов)
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="reviews__navigation swiper-navigation mobile">
+                                <button class="swiper-button-prev reviews__button-prev">
+                                    <svg
+                                        width="59"
+                                        height="16"
+                                        viewBox="0 0 59 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928937C7.68054 0.538412 7.04738 0.538412 6.65685 0.928937L0.292892 7.2929ZM59 7L1 7.00001L1 9.00001L59 9L59 7Z"
+                                            fill="#0B4333"
+                                        />
+                                    </svg>
+                                </button>
+                                <span class="reviews__fraction-mobile"></span>
+                                <button class="swiper-button-next reviews__button-next">
+                                    <svg
+                                        width="59"
+                                        height="16"
+                                        viewBox="0 0 59 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M58.7071 8.70711C59.0976 8.31658 59.0976 7.68342 58.7071 7.29289L52.3431 0.928932C51.9526 0.538408 51.3195 0.538408 50.9289 0.928932C50.5384 1.31946 50.5384 1.95262 50.9289 2.34315L56.5858 8L50.9289 13.6569C50.5384 14.0474 50.5384 14.6805 50.9289 15.0711C51.3195 15.4616 51.9526 15.4616 52.3431 15.0711L58.7071 8.70711ZM0 9H58V7H0V9Z"
+                                            fill="#0B4333"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="request">
+                    <div class="container">
+                        <div class="request__content">
+                            <div class="request__form">
+                                <div class="request__form-text">
+                                    <h2 class="request__title">Оставьте заявку</h2>
+
+                                    <p class="request__description">
+                                        Если у Вас есть вопросы, оставьте заявку и наш менеджер свяжется с
+                                        Вами в ближайшее время.
+                                    </p>
+                                </div>
+
+                                <form data-dev action="#">
+                                    <div class="request__input input">
+                                        <input
+                                            data-validate
+                                            data-required
+                                            autocomplete="off"
+                                            type="text"
+                                            name="form[]"
+                                            data-error="Заполните поле"
+                                            placeholder="Имя"
+                                            class="input__field"
+                                        />
+                                    </div>
+                                    <div class="request__input input">
+                                        <input
+                                            data-phone-mask
+                                            data-validate
+                                            data-required
+                                            autocomplete="off"
+                                            type="tel"
+                                            name="form[]"
+                                            data-error="Заполните поле"
+                                            placeholder="Телефон"
+                                            class="input__field"
+                                        />
+                                    </div>
+
+                                    <p class="request__form-copyright">
+                                        Нажимая на кнопку “отправить” Вы соглашаетесь на обработку
+                                        персональных данных
+                                    </p>
+
+                                    <button type="submit" class="request__btn btn">
+                                        <span class="btn__text">Отправить</span>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="request__poster">
+                                <img src="img/request/poster.webp" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__main">
+                        <div class="footer__group">
+                            <a href="#" class="footer__logo logo-footer"
+                                ><img src="img/logo.svg" alt="" class="logo-footer__image"
+                            /></a>
+                            <p class="footer__text">
+                                Наша главная миссия: сделать вкусную и разнообразную еду на любое
+                                предпочтение, попробуй идею на вкус!
+                            </p>
+                        </div>
+                        <nav class="footer__nav nav-footer">
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">КОМПЛЕКСНЫЕ ОБЕДЫ</span></a
+                            >
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">Услуги</span></a
+                            >
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">доставка</span></a
+                            >
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">о нас</span></a
+                            >
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">статьи</span></a
+                            >
+                            <a href="#" class="nav-footer__link"
+                                ><span class="nav-footer__link-txt">контакты</span></a
+                            >
+                        </nav>
+                    </div>
+                    <div class="footer__lower">
+                        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+                        <ul class="footer__contacts contacts-footer">
+                            <li class="contacts-footer__item">
+                                <a href="mailto:forexample@.com" class="contacts-footer__link"
+                                    >forexample@.com</a
+                                >
+                            </li>
+                            <li class="contacts-footer__item">
+                                <a href="tel:74991362923" class="contacts-footer__link">+7 (499) 136 29 23</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__request-design request-design">
+                        <span class="request-design__text">© Все права защищены.</span>
+                        <a href="https://requestdesign.ru/" class="request-design__logo"
+                            ><img src="img/rd-logo.svg" alt="" class="request-design__logo-image"
+                        /></a>
+                    </div>
+                </div>
+            </footer>
+            <div id="applicationModal" aria-hidden="true" class="modal application-modal">
+                <div class="modal__wrapper">
+                    <div class="modal__content">
+                        <div class="modal__body">
+                            <div class="application-modal__inner">
+                                <div class="application-modal__image-wrap">
+                                    <img
+                                        src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
+                                        alt=""
+                                        class="application-modal__image"
+                                    />
+                                </div>
+                                <div class="application-modal__content">
+                                    <button data-close type="button" class="application-modal__close">
+                                        <img
+                                            src="img/icons/cross-gray.svg"
+                                            alt=""
+                                            class="application-modal__close-icon"
+                                        />
+                                    </button>
+                                    <span class="application-modal__title">Оставьте заявку</span>
+                                    <form
+                                        data-modal-message="#applicationSentModal"
+                                        data-dev
+                                        action="#"
+                                        class="application-modal__form"
+                                    >
+                                        <div class="application-modal__fields">
+                                            <div class="application-modal__input input">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    autocomplete="off"
+                                                    type="text"
+                                                    name="form[]"
+                                                    data-error="Заполните поле"
+                                                    placeholder="Имя"
+                                                    class="input__field"
+                                                />
+                                            </div>
+                                            <div class="application-modal__input input">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    data-phone-mask
+                                                    autocomplete="off"
+                                                    type="tel"
+                                                    name="form[]"
+                                                    data-error="Заполните поле"
+                                                    placeholder="Телефон"
+                                                    class="input__field"
+                                                />
+                                            </div>
+                                        </div>
+                                        <p class="application-modal__text">
+                                            Нажимая на кнопку “отправить” Вы соглашаетесь на обработку
+                                            персональных данных
+                                        </p>
+                                        <button type="submit" class="application-modal__btn btn">
+                                            <span class="btn__text">Отправить</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                id="applicationSentModal"
+                aria-hidden="true"
+                class="modal application-modal application-modal_sent"
+            >
+                <div class="modal__wrapper">
+                    <div class="modal__content">
+                        <div class="modal__body">
+                            <div class="application-modal__inner">
+                                <div class="application-modal__image-wrap">
+                                    <img
+                                        src="img/modals/f08a31def258843e45ec8c8f0337bcd4.webp"
+                                        alt=""
+                                        class="application-modal__image"
+                                    />
+                                </div>
+                                <div class="application-modal__content">
+                                    <button data-close type="button" class="application-modal__close">
+                                        <img
+                                            src="img/icons/cross-gray.svg"
+                                            alt=""
+                                            class="application-modal__close-icon"
+                                        />
+                                    </button>
+                                    <span class="application-modal__title">Ваша заявка отправлена</span>
+                                    <p class="application-modal__text">
+                                        Наш менеджер с скоро свяжется с Вами для уточнения деталей!
+                                    </p>
+                                    <a href="#" class="application-modal__btn btn">
+                                        <span class="btn__text">На главную</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
 </html>

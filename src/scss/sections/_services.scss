@@ -1,19 +1,18 @@
 .services {
-
-    @include small-tablet{
+    @include small-tablet {
         overflow: hidden;
     }
 
     &__title {
         margin-bottom: 0;
 
-        @include small-tablet{
+        @include small-tablet {
             margin-bottom: 8rem;
         }
     }
 
     &-swiper {
-        @include small-tablet{
+        @include small-tablet {
             overflow: visible;
         }
     }
@@ -24,7 +23,7 @@
         justify-content: space-between;
         margin-bottom: 5.6rem;
 
-        @include small-tablet{
+        @include small-tablet {
             margin-bottom: 0;
         }
     }
@@ -35,7 +34,7 @@
         height: 78rem;
         display: flex;
 
-        @include small-tablet{
+        @include small-tablet {
             border-radius: 4rem;
             height: 98.8rem;
         }
@@ -65,7 +64,7 @@
             flex-direction: column;
             gap: 0.8rem;
 
-            @include small-tablet{
+            @include small-tablet {
                 max-width: 100%;
                 margin-bottom: 0;
                 border-radius: 4rem;
@@ -78,7 +77,7 @@
                 font-weight: 700;
                 line-height: 120%;
 
-                @include small-tablet{
+                @include small-tablet {
                     font-size: 4rem;
                 }
             }

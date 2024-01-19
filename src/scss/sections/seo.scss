@@ -41,7 +41,7 @@
             flex-direction: column;
             gap: 0.8rem;
 
-            @include small-tablet{
+            @include small-tablet {
                 gap: 1.6rem;
             }
         }
