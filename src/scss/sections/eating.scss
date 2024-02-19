@@ -46,6 +46,7 @@
         &-image {
             border-radius: 2rem;
             height: 41.2rem;
+            overflow: hidden;
 
             @include small-tablet {
                 height: 54rem;
